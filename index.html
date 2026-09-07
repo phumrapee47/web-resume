@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phumrapee Kaewmanee — Full-Stack &amp; Quant Systems Developer</title>
+    <meta name="description" content="Computer Science student and developer specializing in Full Stack Development, Mobile Applications, and Quantitative / Algorithmic Trading Systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+    <div class="shell">
+        <!-- Rail Navigation -->
+        <aside class="rail" id="rail">
+            <div class="rail-top">
+                <a href="#top" class="rail-mark" aria-label="Back to top">PK</a>
+            </div>
+            <nav class="rail-nav" aria-label="Section navigation">
+                <a href="#summary" class="rail-link"><span class="rail-link-num">01</span><span data-i18n="idx.summary.title">Professional Summary</span></a>
+                <a href="#skills" class="rail-link"><span class="rail-link-num">02</span><span data-i18n="idx.skills.title">Skills</span></a>
+                <a href="#education" class="rail-link"><span class="rail-link-num">03</span><span data-i18n="idx.edu.title">Education</span></a>
+                <a href="#projects" class="rail-link"><span class="rail-link-num">04</span><span data-i18n="idx.proj.title">Featured Projects</span></a>
+                <a href="#languages" class="rail-link"><span class="rail-link-num">05</span><span data-i18n="idx.lang.title">Languages</span></a>
+            </nav>
+            <div class="rail-bottom">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="content">
+            <!-- Hero -->
+            <header class="hero" id="top">
+                <div class="hero-main">
+                    <img src="profile_resume.JPG" alt="Phumrapee Kaewmanee" class="hero-avatar">
+                    <div class="hero-text">
+                        <h1 class="name">Phumrapee Kaewmanee</h1>
+                        <p class="hero-role" data-i18n="hero.role">Full-Stack Developer &amp; Quant Systems Engineer</p>
+                        <div class="contact-info">
+                            <span>📧 Phumrapee47@gmail.com</span>
+                            <span>📱 092-768-3886</span>
+                            <span>📍 Bangkok, Thailand</span>
+                        </div>
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary" data-i18n="hero.cta.projects">View Projects</a>
+                            <a href="mailto:Phumrapee47@gmail.com" class="btn btn-secondary" data-i18n="hero.cta.contact">Get in Touch</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/phumrapee47" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://www.linkedin.com/in/phumrapee-kaewmanee-a793423a9" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="#">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-spec spot">
+                    <div class="hero-spec-row">
+                        <span class="hero-spec-label" data-i18n="hero.meta.location">Location</span>
+                        <span class="hero-spec-value">Bangkok, Thailand</span>
+                    </div>
+                    <div class="hero-spec-row">
+                        <span class="hero-spec-label" data-i18n="hero.meta.status">Status</span>
+                        <span class="hero-spec-value"><span data-i18n="idx.edu.year.label">Year:</span> 4 · <span data-i18n="idx.edu.major">Computer Science</span></span>
+                    </div>
+                    <div class="hero-spec-row hero-spec-row--tags">
+                        <span class="hero-spec-label" data-i18n="hero.meta.focus">Focus</span>
+                        <span class="hero-spec-tags">
+                            <span class="mini-tag" data-i18n="idx.skills.frontend">Frontend</span>
+                            <span class="mini-tag" data-i18n="idx.skills.backend">Backend &amp; Systems</span>
+                            <span class="mini-tag" data-i18n="idx.skills.tools">Tools &amp; AI / Quant</span>
+                        </span>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <!-- Professional Summary -->
+                <section class="section" id="summary">
+                    <h2 class="section-title" data-i18n="idx.summary.title">Professional Summary</h2>
+                    <p class="summary-text" data-i18n="idx.summary.text">Computer Science student and Developer with strong expertise in Full Stack Development, Mobile Applications, and Quantitative / Algorithmic Trading Systems. Experienced in developing institutional-grade trading systems (MQL5 / C++), deploying on-edge Machine Learning models via ONNX Runtime, and building scalable full-stack web and mobile applications.</p>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="section" id="skills">
+                    <h2 class="section-title" data-i18n="idx.skills.title">Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 data-i18n="idx.skills.frontend">Frontend</h3>
+                            <div class="skill-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Flutter</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3 data-i18n="idx.skills.backend">Backend &amp; Systems</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">MQL5 / C++</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3 data-i18n="idx.skills.tools">Tools &amp; AI / Quant</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Git</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">MetaTrader 5</span>
+                                <span class="tag">ONNX Runtime</span>
+                                <span class="tag">LightGBM</span>
+                                <span class="tag">VS Code</span>
+                                <span class="tag">Figma</span>
+                                <span class="tag">Power BI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technology Stacks -->
+                    <div class="tech-stacks-section">
+                        <h3 class="stacks-title" data-i18n="idx.stacks.title">Technology Stacks</h3>
+                        <div class="stacks-container">
+                            <!-- Fullstack Stack -->
+                            <div class="stack-card spot">
+                                <div class="stack-header">
+                                    <h4>💻 Fullstack</h4>
+                                </div>
+                                <div class="stack-content">
+                                    <div class="stack-item">
+                                        <span class="stack-label">Frontend:</span>
+                                        <span class="stack-tech">React, Vue.js, HTML5, CSS3, JavaScript (ES6+)</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">Backend:</span>
+                                        <span class="stack-tech">Node.js, Express, Python, REST API</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">Database:</span>
+                                        <span class="stack-tech">MongoDB, PostgreSQL, SQL</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">Tools:</span>
+                                        <span class="stack-tech">Git, Docker, VS Code</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Stack -->
+                            <div class="stack-card spot">
+                                <div class="stack-header">
+                                    <h4>📱 Mobile</h4>
+                                </div>
+                                <div class="stack-content">
+                                    <div class="stack-item">
+                                        <span class="stack-label">Framework:</span>
+                                        <span class="stack-tech">Flutter</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">Language:</span>
+                                        <span class="stack-tech">Dart</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">Platforms:</span>
+                                        <span class="stack-tech">iOS, Android</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">State Management:</span>
+                                        <span class="stack-tech">Provider, GetX</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Data Stack -->
+                            <div class="stack-card spot">
+                                <div class="stack-header">
+                                    <h4>📊 Data Science &amp; AI</h4>
+                                </div>
+                                <div class="stack-content">
+                                    <div class="stack-item">
+                                        <span class="stack-label">Language:</span>
+                                        <span class="stack-tech">Python</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">ML Libraries:</span>
+                                        <span class="stack-tech">Scikit-learn, TensorFlow, Pandas, NumPy</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">Data Analysis:</span>
+                                        <span class="stack-tech">Pandas, Matplotlib, Seaborn</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">AI Integration:</span>
+                                        <span class="stack-tech">Gemini API, Machine Learning Models</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quant & Algo Trading Stack -->
+                            <div class="stack-card stack-card--feature spot">
+                                <div class="stack-header">
+                                    <h4>📈 Quantitative &amp; Algorithmic Trading</h4>
+                                </div>
+                                <div class="stack-content stack-content--grid">
+                                    <div class="stack-item">
+                                        <span class="stack-label">Languages &amp; Runtime:</span>
+                                        <span class="stack-tech">MQL5, C++, Python, ONNX Runtime, MT5 API</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">Quant &amp; ML Models:</span>
+                                        <span class="stack-tech">LightGBM, Time-Series Walk-Forward CV, Feature Engineering</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">Trading Concepts:</span>
+                                        <span class="stack-tech">Smart Money Concepts (SMC), Multi-Scale Regime Classification</span>
+                                    </div>
+                                    <div class="stack-item">
+                                        <span class="stack-label">Risk Management:</span>
+                                        <span class="stack-tech">Dynamic Circuit Breakers, Basket Hedging, 5-Layer Safety Gate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section class="section" id="education">
+                    <h2 class="section-title" data-i18n="idx.edu.title">Education</h2>
+                    <div class="education-container">
+                        <div class="education-item spot">
+                            <div class="education-logo-wrapper">
+                                <img src="logo.png" alt="KMITL Logo" class="university-logo">
+                            </div>
+                            <div class="education-content">
+                                <div class="education-header">
+                                    <h3 data-i18n="idx.edu.degree">Bachelor of Science (BSc)</h3>
+                                    <p class="degree-major" data-i18n="idx.edu.major">Computer Science</p>
+                                    <span class="date" data-i18n="idx.edu.date">2024 - Present</span>
+                                </div>
+                                <p class="university" data-i18n="idx.edu.uni">King Mongkut's Institute of Technology Ladkrabang</p>
+                                <p class="university-short">KMITL</p>
+                                <div class="education-details-box">
+                                    <p class="education-detail">
+                                        <span class="detail-label" data-i18n="idx.edu.faculty.label">Faculty:</span> <span data-i18n="idx.edu.faculty.value">Faculty of Science</span>
+                                    </p>
+                                    <p class="education-detail">
+                                        <span class="detail-label" data-i18n="idx.edu.year.label">Year:</span> 4
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section class="section" id="projects">
+                    <h2 class="section-title" data-i18n="idx.proj.title">Featured Projects</h2>
+
+                    <!-- Special Problem / Senior Project (ปัญหาพิเศษ) -->
+                    <div class="project-group">
+                        <h3 class="project-group-title" data-i18n="idx.proj.senior.group">Senior Project / Special Problem (ปัญหาพิเศษ)</h3>
+                        <div class="projects-grid">
+                            <div class="project-card tile-full card-feature spot">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-badge" data-i18n="idx.proj.senior.badge">Senior Capstone / ปัญหาพิเศษ</span>
+                                        <a href="projects/knares-smc-ea.html" class="project-title-link">
+                                            <h3>KNARES MT5: Institutional-Grade SMC Expert Advisor</h3>
+                                        </a>
+                                    </div>
+                                    <a href="https://github.com/phumrapee47" class="github-link" target="_blank" rel="noopener noreferrer" title="View Source">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    </a>
+                                </div>
+                                <p class="project-tech">MQL5 • C++ • Smart Money Concepts (SMC) • Multi-Strategy Engine • MetaTrader 5</p>
+                                <div class="features-list">
+                                    <p class="feature-title" data-i18n="shared.features">Key Features:</p>
+                                    <ul>
+                                        <li data-i18n="idx.proj.kn.f1"><strong>12-State Market Regime Classifier:</strong> Real-time market regime identification (Trend Up/Down, Range/Choppy, Volatility Shock, Breakout Squeeze)</li>
+                                        <li data-i18n="idx.proj.kn.f2"><strong>Institutional SMC Context Engine:</strong> Algorithmic market structure detection (BOS, CHoCH, Liquidity Sweeps, and Fibonacci Premium/Discount Zones)</li>
+                                        <li data-i18n="idx.proj.kn.f3"><strong>Centralized Pipeline Controller:</strong> Multi-strategy arbitration (Trend, Breakout, Mean Reversion) with dynamic scoring and Signal Rescue logic</li>
+                                        <li data-i18n="idx.proj.kn.f4"><strong>5-Layer Safety Limit Gate:</strong> Comprehensive capital protection (Portfolio Drawdown limits, Exposure/Heat Caps, Price Clustering blocks, Single-Instance Guard)</li>
+                                        <li data-i18n="idx.proj.kn.f5"><strong>Priority-Based Exit Arbitration:</strong> 6-tier execution management with 1R Partial Close + Breakeven, Volatility Shock emergency exit, and dynamic ATR Trailing Stops</li>
+                                    </ul>
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="projects/knares-smc-ea.html" class="btn-view-details" data-i18n="idx.proj.senior.btn">View Senior Project Details →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quantitative AI & Trading Systems -->
+                    <div class="project-group">
+                        <h3 class="project-group-title" data-i18n="idx.proj.quant.group">Quantitative AI &amp; Algorithmic Trading Systems</h3>
+                        <div class="projects-grid">
+                            <div class="project-card tile-lg spot">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-badge" data-i18n="idx.proj.gs.badge">AI Quant Trading Engine</span>
+                                        <a href="projects/goldsniper-ai.html" class="project-title-link">
+                                            <h3 data-i18n="idx.proj.gs.title">GoldSniper AI: Multi-Scale Machine Learning Trading Engine</h3>
+                                        </a>
+                                    </div>
+                                    <a href="https://github.com/phumrapee47" class="github-link" target="_blank" rel="noopener noreferrer" title="View Source">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    </a>
+                                </div>
+                                <p class="project-tech">MQL5 • C++ • LightGBM • ONNX Runtime • Python (Scikit-Learn) • MetaTrader 5</p>
+                                <div class="features-list">
+                                    <p class="feature-title" data-i18n="shared.features">Key Features:</p>
+                                    <ul>
+                                        <li data-i18n="idx.proj.gs.f1"><strong>Hierarchical Multi-Scale ML Architecture:</strong> 3 concurrent models (Micro H1/M15/M5, Swing H4/M30/M15, Macro D1/H4/H1) for regime classification (Bull/Bear/Sideway)</li>
+                                        <li data-i18n="idx.proj.gs.f2"><strong>Native ONNX In-Memory Inference:</strong> Zero-latency direct model execution inside MetaTrader 5 / MQL5 runtime without subprocess or API overhead</li>
+                                        <li data-i18n="idx.proj.gs.f3"><strong>Dual Execution Engines:</strong> Dynamic ATR Trend Scalper &amp; Prior-Trend Sideway Martingale Grid with AI Reversal Killer</li>
+                                        <li data-i18n="idx.proj.gs.f4"><strong>Institutional Risk &amp; Defense:</strong> 5-Pillar safety defense including Daily Soft/Hard Circuit Breakers, News Event Blackout Shield, and Global Basket Profit Lock</li>
+                                        <li data-i18n="idx.proj.gs.f5"><strong>Time-Series Walk-Forward Validation:</strong> Purged &amp; embargoed validation across 8+ years (2018–2026) of gold (XAUUSD) data with 42+ engineered quantitative features</li>
+                                    </ul>
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="projects/goldsniper-ai.html" class="btn-view-details" data-i18n="idx.proj.gs.btn">View AI Engine Details →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card tile-sm spot">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-badge" data-i18n="idx.proj.lb.badge">AI Signal Bot</span>
+                                        <a href="projects/line-bot-xauusd.html" class="project-title-link">
+                                            <h3 data-i18n="idx.proj.lb.title">LINE Bot XAUUSD Trading Signals</h3>
+                                        </a>
+                                    </div>
+                                    <a href="https://github.com/phumrapee47/Line_bot_XAUUSD.git" class="github-link" target="_blank" rel="noopener noreferrer">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    </a>
+                                </div>
+                                <p class="project-tech">Python • Machine Learning • LINE Messaging API • Gemini API</p>
+                                <div class="features-list">
+                                    <p class="feature-title" data-i18n="shared.features">Key Features:</p>
+                                    <ul>
+                                        <li data-i18n="idx.proj.lb.f1">Trained ML Model for price prediction &amp; regime detection of XAUUSD</li>
+                                        <li data-i18n="idx.proj.lb.f2">Real-time Price Signal Detection and automated pattern analysis</li>
+                                        <li data-i18n="idx.proj.lb.f3">Gemini API for Prediction Reasoning, Explanations &amp; Risk Assessment</li>
+                                        <li data-i18n="idx.proj.lb.f4">Automated LINE Push Notifications with formatted charts &amp; setups</li>
+                                    </ul>
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="projects/line-bot-xauusd.html" class="btn-view-details" data-i18n="idx.proj.lb.btn">View Signal Bot Details →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Restaurant Ordering System Projects -->
+                    <div class="project-group">
+                        <h3 class="project-group-title" data-i18n="idx.proj.rest.group">Restaurant Ordering System</h3>
+                        <div class="projects-grid">
+                            <div class="project-card tile-md spot">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-badge">Production Web App</span>
+                                        <a href="projects/restaurant-system.html#admin-dashboard" class="project-title-link">
+                                            <h3 data-i18n="idx.proj.admin.title">Restaurant Ordering System - Admin Dashboard</h3>
+                                        </a>
+                                    </div>
+                                    <a href="https://github.com/phumrapee47/admin_dashboard_restuarant_application.git" class="github-link" target="_blank" rel="noopener noreferrer">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    </a>
+                                </div>
+                                <p class="project-tech">React • Node.js • Express • Vite • Tailwind CSS • Supabase (PostgreSQL)</p>
+                                <div class="features-list">
+                                    <p class="feature-title" data-i18n="shared.features">Key Features:</p>
+                                    <ul>
+                                        <li data-i18n="idx.proj.admin.f1">Real-time Order Management - View and track all incoming orders</li>
+                                        <li data-i18n="idx.proj.admin.f2">Menu Management System - Create, update, and delete menu items</li>
+                                        <li data-i18n="idx.proj.admin.f3">Sales Analytics &amp; Reports - Track daily/weekly sales and revenue</li>
+                                        <li data-i18n="idx.proj.admin.f4">Live Order Notifications - Push notifications to customers via LINE Bot</li>
+                                        <li data-i18n="idx.proj.admin.f5">Dashboard Analytics - Visual dashboard with order statistics</li>
+                                        <li data-i18n="idx.proj.admin.f6">Secure Authentication - Password-encrypted login system</li>
+                                    </ul>
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="projects/restaurant-system.html#admin-dashboard" class="btn-view-details" data-i18n="idx.proj.admin.btn">View Full Ecosystem Details →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card tile-md spot">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-badge" data-i18n="idx.proj.lbr.badge">Production Chatbot</span>
+                                        <a href="projects/restaurant-system.html#line-bot" class="project-title-link">
+                                            <h3 data-i18n="idx.proj.lbr.title">LINE Bot Restaurant Ordering</h3>
+                                        </a>
+                                    </div>
+                                    <a href="https://github.com/phumrapee47/line_bot_restuarant_ordering.git" class="github-link" target="_blank" rel="noopener noreferrer">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    </a>
+                                </div>
+                                <p class="project-tech">Node.js • LINE Messaging API • Express • Supabase</p>
+                                <div class="features-list">
+                                    <p class="feature-title" data-i18n="shared.features">Key Features:</p>
+                                    <ul>
+                                        <li data-i18n="idx.proj.lbr.f1">LINE Messaging API Integration - Full webhook support</li>
+                                        <li data-i18n="idx.proj.lbr.f2">Order Processing via LINE Chat - Customers order through LINE</li>
+                                        <li data-i18n="idx.proj.lbr.f3">Automated Order Confirmation - Instant order confirmation messages</li>
+                                        <li data-i18n="idx.proj.lbr.f4">Database Synchronization - Orders saved to Supabase in real-time</li>
+                                        <li data-i18n="idx.proj.lbr.f5">Flex Message Support - Rich formatted message responses</li>
+                                        <li data-i18n="idx.proj.lbr.f6">CORS Enabled - Multi-origin support for connected apps</li>
+                                    </ul>
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="projects/restaurant-system.html#line-bot" class="btn-view-details" data-i18n="idx.proj.admin.btn">View Full Ecosystem Details →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card tile-full spot">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-badge">Production Web App</span>
+                                        <a href="projects/restaurant-system.html#customer-app" class="project-title-link">
+                                            <h3 data-i18n="idx.proj.cust.title">Customer App Restaurant Ordering</h3>
+                                        </a>
+                                    </div>
+                                    <a href="https://github.com/phumrapee47/customer_app_restuarant_application.git" class="github-link" target="_blank" rel="noopener noreferrer">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    </a>
+                                </div>
+                                <p class="project-tech">React • Vite • Tailwind CSS • Supabase REST API</p>
+                                <div class="features-list">
+                                    <p class="feature-title" data-i18n="shared.features">Key Features:</p>
+                                    <ul>
+                                        <li data-i18n="idx.proj.cust.f1">Menu Browsing &amp; Selection - Browse restaurant menu with categories</li>
+                                        <li data-i18n="idx.proj.cust.f2">Order Placement - Submit orders with customer details</li>
+                                        <li data-i18n="idx.proj.cust.f3">Shopping Cart Functionality - Add/remove items from cart</li>
+                                        <li data-i18n="idx.proj.cust.f4">Real-time Database Integration - Seamless data sync with Supabase</li>
+                                        <li data-i18n="idx.proj.cust.f5">Responsive Design - Mobile-friendly ordering interface</li>
+                                    </ul>
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="projects/restaurant-system.html#customer-app" class="btn-view-details" data-i18n="idx.proj.admin.btn">View Full Ecosystem Details →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile & Machine Learning Applications -->
+                    <div class="project-group">
+                        <h3 class="project-group-title" data-i18n="idx.proj.ml.group">Mobile &amp; Machine Learning Applications</h3>
+                        <div class="projects-grid">
+                            <div class="project-card tile-sm spot">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-badge" data-i18n="idx.proj.eat.badge">Mobile App</span>
+                                        <a href="projects/eat-at-sci.html" class="project-title-link">
+                                            <h3 data-i18n="idx.proj.eat.title">Eat@Sci: Cafeteria Mobile Application</h3>
+                                        </a>
+                                    </div>
+                                    <a href="https://github.com/phumrapee47" class="github-link" target="_blank" rel="noopener noreferrer">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    </a>
+                                </div>
+                                <p class="project-tech">Flutter • Dart • Supabase • PostgreSQL • Firebase</p>
+                                <div class="features-list">
+                                    <p class="feature-title" data-i18n="shared.features">Key Features:</p>
+                                    <ul>
+                                        <li data-i18n="idx.proj.eat.f1">Auto Student Registration - Extracts student ID, year level, and faculty automatically from KMITL email</li>
+                                        <li data-i18n="idx.proj.eat.f2">Real-time Order Management - Live order tracking with QR code verification system and payment slip uploads</li>
+                                        <li data-i18n="idx.proj.eat.f3">Restaurant Dashboard - Menu management, order scheduling, and manual override capabilities with real-time updates</li>
+                                        <li>Secure Authentication &amp; Privacy - Supabase auth with Row-Level Security (RLS) policies ensuring student data isolation and protection</li>
+                                    </ul>
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="projects/eat-at-sci.html" class="btn-view-details" data-i18n="idx.proj.eat.btn">View Mobile App Details →</a>
+                                </div>
+                            </div>
+
+                            <div class="project-card tile-lg spot">
+                                <div class="project-header">
+                                    <div>
+                                        <span class="project-badge" data-i18n="idx.proj.alz.badge">Machine Learning</span>
+                                        <a href="projects/alzheimer-prediction.html" class="project-title-link">
+                                            <h3 data-i18n="idx.proj.alz.title">Alzheimer's Disease Prediction Platform</h3>
+                                        </a>
+                                    </div>
+                                    <a href="https://alzimer-demo.onrender.com" class="web-link" target="_blank" rel="noopener noreferrer">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v2H4V4zm0 5h16v2H4V9zm0 5h16v2H4v-2zm0 5h16v2H4v-2zm-1-13c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H3z"/></svg>
+                                    </a>
+                                </div>
+                                <p class="project-tech">Python • Scikit-learn • Machine Learning • Streamlit / Flask • Pandas</p>
+                                <div class="features-list">
+                                    <p class="feature-title" data-i18n="shared.features">Key Features:</p>
+                                    <ul>
+                                        <li data-i18n="idx.proj.alz.f1">Trained Multi-Class Classification Model for early Alzheimer's disease stage prediction</li>
+                                        <li data-i18n="idx.proj.alz.f2">Clinical Feature Importance &amp; Data Analytics pipeline using patient cognitive indicators</li>
+                                        <li data-i18n="idx.proj.alz.f3">Interactive Web Application Interface for clinical risk assessment and metric visualization</li>
+                                        <li data-i18n="idx.proj.alz.f4">Data Preprocessing &amp; Validation pipeline engineered for high medical classification accuracy</li>
+                                    </ul>
+                                </div>
+                                <div class="project-card-footer">
+                                    <a href="projects/alzheimer-prediction.html" class="btn-view-details" data-i18n="idx.proj.alz.btn">View ML Platform Details →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Languages Section -->
+                <section class="section" id="languages">
+                    <h2 class="section-title" data-i18n="idx.lang.title">Languages</h2>
+                    <div class="languages-list">
+                        <div class="language-skill">
+                            <div class="skill-header">
+                                <span class="skill-name" data-i18n="idx.lang.thai">Thai</span>
+                                <span class="skill-percentage">100%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="language-skill">
+                            <div class="skill-header">
+                                <span class="skill-name" data-i18n="idx.lang.english">English</span>
+                                <span class="skill-percentage">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p data-i18n="idx.footer">&copy; 2026 .Phumrapee Kaewmane.All rights reserved.</p>
+                <a href="#top" class="footer-top" aria-label="Back to top">↑</a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

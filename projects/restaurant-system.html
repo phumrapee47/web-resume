@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering System Ecosystem | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../project-detail.css">
+    <style>
+        .component-card {
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            background-color: var(--card-bg);
+            margin-bottom: 35px;
+            transition: all 0.3s ease;
+        }
+        .component-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 8px 24px rgba(194, 65, 12, 0.15);
+        }
+        .comp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 18px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .comp-header h3 {
+            font-size: 1.3em;
+            color: var(--text-dark);
+        }
+        .comp-tech {
+            font-size: 0.88em;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+    <div class="detail-container">
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <a href="../index.html" class="back-link">
+                <span>←</span data-i18n="rs.back"> Back to Resume
+            </a>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-badge-group">
+                <span class="hero-badge badge-primary" data-i18n="rs.hero.badge1">Production Ecosystem</span>
+                <span class="hero-badge badge-secondary" data-i18n="rs.hero.badge2">Full-Stack LINE Integration</span>
+                <span class="hero-badge badge-warning">React • Node.js • Supabase</span>
+            </div>
+            <h1 class="hero-title" data-i18n="rs.hero.title">Restaurant Ordering & Kitchen Management Ecosystem</h1>
+            <p class="hero-subtitle" data-i18n="rs.hero.subtitle">An end-to-end multi-service food ordering solution comprising a Customer LINE LIFF Web App, an automated LINE Messaging Bot, and a Real-time Admin & Kitchen Dashboard.</p>
+            
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="rs.meta.l1">Project Scope</span>
+                    <span class="meta-value" data-i18n="rs.meta.v1">3 Connected Subsystems</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="rs.meta.l2">Frontend Stack</span>
+                    <span class="meta-value">React, Vite, Tailwind, LIFF</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="rs.meta.l3">Backend & Database</span>
+                    <span class="meta-value">Node.js, Express, Supabase</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="rs.meta.l4">Integrations</span>
+                    <span class="meta-value">LINE Messaging API, REST</span>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="https://github.com/phumrapee47" class="action-btn btn-solid" data-i18n="rs.btn.github" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub Repositories
+                </a>
+                <a href="../index.html#projects" class="action-btn btn-outline" data-i18n="rs.btn.portfolio">Back to Portfolio</a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content-body">
+            <!-- System Overview -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="rs.s1.title">End-to-End System Architecture</h2>
+                <p class="section-lead">
+                    This restaurant ordering ecosystem replaces traditional paper menus and fragmented order taking with an automated, synchronized real-time workflow across three micro-services:
+                </p>
+
+                <div class="architecture-box">
+                    <div class="arch-header">
+                        <h4>Real-Time Communication Pipeline</h4>
+                        <span class="hero-badge badge-primary">Full-Duplex Data Sync</span>
+                    </div>
+                    <div class="arch-flow">
+                        <div class="flow-step">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h5>Customer Ordering (LINE LIFF Web App)</h5>
+                                <p>Customer opens the app inside LINE via LIFF, browses categories, adds items to cart with special instructions, and places an order with 1-click verification.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h5>Central Database & Event Trigger (Supabase PostgreSQL)</h5>
+                                <p>Orders are committed to Supabase with real-time change events immediately broadcasting status updates to all connected instances.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h5>Kitchen Order Board (Admin Dashboard)</h5>
+                                <p>Kitchen staff view incoming tickets in real-time, accept orders, update preparation stages (Cooking → Ready → Completed), and manage restaurant inventory.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">4</div>
+                            <div class="step-content">
+                                <h5>Automated Customer Notifications (LINE Messaging Bot)</h5>
+                                <p>The Node.js LINE bot pushes rich Flex Message receipts and real-time status alerts (Order Confirmed, Food Ready for Pickup) directly into the customer's LINE chat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3 Core Subsystems Breakdown -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="rs.s2.title">Detailed Subsystems & Components</h2>
+
+                <!-- Subsystem 1: Admin Dashboard -->
+                <div class="component-card" id="admin-dashboard">
+                    <div class="comp-header">
+                        <div>
+                            <span class="hero-badge badge-primary" style="margin-bottom: 6px;" data-i18n="rs.sub1.label">Subsystem 1</span>
+                            <h3 data-i18n="rs.sub1.title">1. Restaurant Admin & Kitchen Dashboard</h3>
+                        </div>
+                        <a href="https://github.com/phumrapee47/admin_dashboard_restuarant_application.git" class="action-btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            GitHub Repo ↗
+                        </a>
+                    </div>
+                    <p class="comp-tech">React • Vite • Tailwind CSS • Node.js • Express • Supabase (PostgreSQL)</p>
+                    <p style="font-size: 0.95em; color: var(--text-light); margin-bottom: 18px;">
+                        A responsive administrative web portal for restaurant owners and kitchen staff providing live order tracking, menu inventory management, and financial analytics.
+                    </p>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">📋</div>
+                            <h4>Real-Time Live Order Board</h4>
+                            <p>Instant Kanban-style order board with acoustic notifications on new orders and quick status transitions (Pending → Cooking → Ready → Done).</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🍲</div>
+                            <h4>Menu & Inventory Management</h4>
+                            <p>Full CRUD capabilities to add new dishes, toggle item availability (in-stock/sold-out), update prices, and categorize items.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h4>Revenue & Sales Analytics</h4>
+                            <p>Visual statistics and revenue charts showing daily, weekly, and monthly sales volume, top-selling items, and peak hour trends.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔐</div>
+                            <h4>Role-Based Access Control</h4>
+                            <p>Encrypted authentication and authorization ensuring administrative controls and financial data are securely gated.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subsystem 2: LINE Bot -->
+                <div class="component-card" id="line-bot">
+                    <div class="comp-header">
+                        <div>
+                            <span class="hero-badge badge-secondary" style="margin-bottom: 6px;" data-i18n="rs.sub2.label">Subsystem 2</span>
+                            <h3 data-i18n="rs.sub2.title">2. Automated LINE Bot Ordering Engine</h3>
+                        </div>
+                        <a href="https://github.com/phumrapee47/line_bot_restuarant_ordering.git" class="action-btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            GitHub Repo ↗
+                        </a>
+                    </div>
+                    <p class="comp-tech">Node.js • Express • LINE Messaging API • Webhook Architecture • Supabase</p>
+                    <p style="font-size: 0.95em; color: var(--text-light); margin-bottom: 18px;">
+                        The communication bridge handling automated webhook callbacks, customer conversational order confirmations, and formatted push messages via LINE.
+                    </p>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🤖</div>
+                            <h4>LINE Messaging Webhooks</h4>
+                            <p>High-throughput Express webhook server handling signature verification and asynchronous event dispatching with low latency.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💬</div>
+                            <h4>Interactive Flex Messages</h4>
+                            <p>Custom-styled, branded Flex Message receipts containing itemized orders, prices, order IDs, and estimated preparation time.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔔</div>
+                            <h4>Automated Push Notifications</h4>
+                            <p>Triggers push notifications when kitchen staff changes order state, keeping customers informed without manual phone calls.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔄</div>
+                            <h4>Database Synchronization</h4>
+                            <p>Real-time order state synchronization with Supabase to ensure accurate timestamps and order completion records.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subsystem 3: Customer App -->
+                <div class="component-card" id="customer-app">
+                    <div class="comp-header">
+                        <div>
+                            <span class="hero-badge badge-warning" style="margin-bottom: 6px;" data-i18n="rs.sub3.label">Subsystem 3</span>
+                            <h3 data-i18n="rs.sub3.title">3. Customer Ordering Web App (LINE LIFF)</h3>
+                        </div>
+                        <a href="https://github.com/phumrapee47/customer_app_restuarant_application.git" class="action-btn btn-outline" target="_blank" rel="noopener noreferrer">
+                            GitHub Repo ↗
+                        </a>
+                    </div>
+                    <p class="comp-tech">React • Vite • Tailwind CSS • LINE Front-end Framework (LIFF) • Supabase REST API</p>
+                    <p style="font-size: 0.95em; color: var(--text-light); margin-bottom: 18px;">
+                        A mobile-first web application embedded directly into the LINE app, providing customers with a seamless, zero-install ordering experience.
+                    </p>
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">📱</div>
+                            <h4>LINE LIFF Seamless Login</h4>
+                            <p>Automatically acquires user profile and LINE user ID through the LIFF SDK without requiring manual registration or password entry.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🛒</div>
+                            <h4>Dynamic Menu & Cart System</h4>
+                            <p>Interactive category filter, dish customization options (spiciness, extra toppings), and a persistent shopping cart state.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h4>Instant Order Submission</h4>
+                            <p>Submits order payloads directly to the backend database with instant visual confirmation and status feedback.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">✨</div>
+                            <h4>Polished Mobile-First UI</h4>
+                            <p>Tailwind CSS responsive design optimized for smooth touch gestures and high-DPI smartphone displays.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tech Stack Tags -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="rs.s3.title">Technologies & Architecture Stack</h2>
+                <div class="tech-pill-group">
+                    <span class="tech-pill">⚛️ React 18</span>
+                    <span class="tech-pill">⚡ Vite</span>
+                    <span class="tech-pill">🎨 Tailwind CSS</span>
+                    <span class="tech-pill">🟢 Node.js & Express</span>
+                    <span class="tech-pill">💬 LINE Messaging API</span>
+                    <span class="tech-pill">📱 LINE LIFF SDK</span>
+                    <span class="tech-pill">🐘 Supabase (PostgreSQL)</span>
+                    <span class="tech-pill">🔄 Real-time WebSockets</span>
+                    <span class="tech-pill">🛡️ REST API & CORS Security</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="detail-footer">
+            <p data-i18n="rs.footer">&copy; 2026 Phumrapee Kaewmanee. Restaurant Ordering System. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../lang.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

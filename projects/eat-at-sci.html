@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat@Sci - Cafeteria Mobile App | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+<body>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+    <div class="detail-container">
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <a href="../index.html" class="back-link">
+                <span>←</span data-i18n="eat.back"> Back to Resume
+            </a>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-badge-group">
+                <span class="hero-badge badge-primary" data-i18n="eat.hero.badge1">Mobile Application</span>
+                <span class="hero-badge badge-secondary" data-i18n="eat.hero.badge2">Campus Cafeteria Solution</span>
+                <span class="hero-badge badge-warning">Flutter • Dart • Supabase</span>
+            </div>
+            <h1 class="hero-title" data-i18n="eat.hero.title">Eat@Sci: Cafeteria Mobile Application</h1>
+            <p class="hero-subtitle" data-i18n="eat.hero.subtitle">A cross-platform mobile solution developed for the Faculty of Science cafeteria at KMITL, featuring automated institutional student verification, live QR order tracking, and vendor dashboard management.</p>
+            
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="eat.meta.l1">Client / Target</span>
+                    <span class="meta-value" data-i18n="eat.meta.v1">Faculty of Science, KMITL</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="eat.meta.l2">Framework</span>
+                    <span class="meta-value">Flutter & Dart</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="eat.meta.l3">Database & Auth</span>
+                    <span class="meta-value">Supabase (PostgreSQL RLS)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="eat.meta.l4">Platforms</span>
+                    <span class="meta-value">iOS & Android</span>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="https://github.com/phumrapee47" class="action-btn btn-solid" data-i18n="eat.btn.github" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    View Code on GitHub
+                </a>
+                <a href="../index.html#projects" class="action-btn btn-outline" data-i18n="eat.btn.portfolio">Back to Portfolio</a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content-body">
+            <!-- Project Overview -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="eat.s1.title">Project Overview & Problem Solved</h2>
+                <p class="section-lead">
+                    During peak lunchtime hours at the Faculty of Science cafeteria, overcrowding and long queue times frequently caused student schedule delays. **Eat@Sci** modernizes the dining experience by allowing students to pre-order food, upload payment slips, and pick up meals seamlessly using unique QR code verification.
+                </p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎓</div>
+                        <h4>Auto Institutional Registration</h4>
+                        <p>Automatically parses student ID numbers, faculty branch, and academic year level directly from KMITL email addresses during authentication.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h4>QR Verification & Slip Uploads</h4>
+                        <p>Generates dynamic pickup QR codes upon order submission with integrated promptpay slip uploads for fast vendor verification.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏪</div>
+                        <h4>Merchant & Kitchen Mode</h4>
+                        <p>Dedicated merchant view for vendor stalls to manage menu offerings, set sold-out flags, and update cooking progress in real-time.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h4>Supabase Row-Level Security</h4>
+                        <p>Strict database isolation policies ensure students only access their own order histories and personal records.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Architecture -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="eat.s2.title">Technical Architecture & Stack</h2>
+                <div class="architecture-box">
+                    <div class="arch-header">
+                        <h4>Application Workflow</h4>
+                        <span class="hero-badge badge-primary">Real-Time Mobile Flow</span>
+                    </div>
+                    <div class="arch-flow">
+                        <div class="flow-step">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h5>Student Auth & Profile Generation</h5>
+                                <p>Student logs in with KMITL Google OAuth → Regex parser extracts year/faculty → Profile synchronized in Supabase.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h5>Menu Browsing & Pre-Ordering</h5>
+                                <p>Student selects vendor stall, chooses dishes, specifies food customizations, and checks out with payment slip attachment.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h5>Vendor Kitchen Real-Time Processing</h5>
+                                <p>Vendor receives push alert, verifies payment slip, prepares food, and marks the order as "Ready for Pickup".</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">4</div>
+                            <div class="step-content">
+                                <h5>QR Code Pickup & Completion</h5>
+                                <p>Student presents dynamic QR code at the stall counter → Vendor scans to confirm handover and close ticket.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technologies -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="eat.s3.title">Technologies Used</h2>
+                <div class="tech-pill-group">
+                    <span class="tech-pill">💙 Flutter SDK</span>
+                    <span class="tech-pill">🎯 Dart</span>
+                    <span class="tech-pill">🐘 Supabase (PostgreSQL)</span>
+                    <span class="tech-pill">🔥 Firebase Services</span>
+                    <span class="tech-pill">🔒 Row-Level Security (RLS)</span>
+                    <span class="tech-pill">📷 QR Code Scanner & Generator</span>
+                    <span class="tech-pill">💳 Mobile Payment Verification</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="detail-footer">
+            <p data-i18n="eat.footer">&copy; 2026 Phumrapee Kaewmanee. Eat@Sci Cafeteria Mobile Application. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../lang.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

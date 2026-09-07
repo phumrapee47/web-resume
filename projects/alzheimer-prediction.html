@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer's Disease Prediction Platform | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+<body>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+    <div class="detail-container">
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <a href="../index.html" class="back-link">
+                <span>←</span data-i18n="alz.back"> Back to Resume
+            </a>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-badge-group">
+                <span class="hero-badge badge-primary">Machine Learning / Healthcare AI</span>
+                <span class="hero-badge badge-secondary">Multi-Class Classification</span>
+                <span class="hero-badge badge-warning">Python • Scikit-Learn • Web Demo</span>
+            </div>
+            <h1 class="hero-title" data-i18n="alz.hero.title">Alzheimer's Disease Stage Prediction Platform</h1>
+            <p class="hero-subtitle" data-i18n="alz.hero.subtitle">An end-to-end clinical machine learning platform analyzing patient cognitive scores, demographic markers, and neurological indicators to predict early Alzheimer's disease onset.</p>
+            
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="alz.meta.l1">Domain</span>
+                    <span class="meta-value" data-i18n="alz.meta.v1">Healthcare & Medical AI</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="alz.meta.l2">Core Models</span>
+                    <span class="meta-value">Random Forest, XGBoost, SVM</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="alz.meta.l3">Web Deployment</span>
+                    <span class="meta-value">Render Cloud Platform</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="alz.meta.l4">Key Metrics</span>
+                    <span class="meta-value" data-i18n="alz.meta.v4">High Sensitivity & F1-Score</span>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="https://alzimer-demo.onrender.com" class="action-btn btn-solid" data-i18n="alz.btn.demo" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v2H4V4zm0 5h16v2H4V9zm0 5h16v2H4v-2zm0 5h16v2H4v-2zm-1-13c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H3z"/></svg>
+                    View Live Web Demo
+                </a>
+                <a href="../index.html#projects" class="action-btn btn-outline" data-i18n="alz.btn.portfolio">Back to Portfolio</a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content-body">
+            <!-- Project Overview -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="alz.s1.title">Clinical Background & Objective</h2>
+                <p class="section-lead">
+                    Early detection of Alzheimer’s Disease and Mild Cognitive Impairment (MCI) is critical for administering preventative care and cognitive therapy. This project builds a clinical decision support system utilizing supervised machine learning to classify patients into diagnostic stages based on standardized neuro-psychological assessments and medical metrics.
+                </p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h4>Cognitive Indicator Modeling</h4>
+                        <p>Evaluates Mini-Mental State Examination (MMSE), Clinical Dementia Rating (CDR), Functional Activities Questionnaire (FAQ), and Normalized Brain Volume.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h4>Feature Importance & Interpretability</h4>
+                        <p>Identifies key clinical biomarkers contributing to stage progression, assisting healthcare practitioners with data-backed diagnoses.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚙️</div>
+                        <h4>Robust Data Preprocessing</h4>
+                        <p>Employs SMOTE class balancing, robust outlier handling, and Stratified K-Fold Cross Validation to prevent medical data bias.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h4>Interactive Web Demo Interface</h4>
+                        <p>Web-based diagnostic calculator allowing practitioners to input test scores and view real-time disease probability distributions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Machine Learning Pipeline -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="alz.s2.title">Machine Learning Pipeline</h2>
+                <div class="architecture-box">
+                    <div class="arch-header">
+                        <h4>Pipeline Architecture</h4>
+                        <span class="hero-badge badge-primary">Supervised Pipeline</span>
+                    </div>
+                    <div class="arch-flow">
+                        <div class="flow-step">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h5>Data Ingestion & Clinical Cleaning</h5>
+                                <p>Ingests patient clinical records, handles missing biomarker measurements with iterative imputation, and normalizes numeric ranges.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h5>Feature Selection & Correlation Analysis</h5>
+                                <p>Extracts high-signal predictors and eliminates collinear features using Pearson correlation and mutual information scores.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h5>Ensemble Model Training & Hyperparameter Tuning</h5>
+                                <p>Trains and compares Random Forest, XGBoost, and Support Vector Machine classifiers with GridSearchCV optimization.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">4</div>
+                            <div class="step-content">
+                                <h5>Cloud Deployment & Inference Endpoint</h5>
+                                <p>Deploys serialized model pipeline to Render Cloud with an interactive web UI for real-time risk assessment scoring.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technologies -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="alz.s3.title">Technologies & Stack</h2>
+                <div class="tech-pill-group">
+                    <span class="tech-pill">🐍 Python</span>
+                    <span class="tech-pill">🔬 Scikit-Learn</span>
+                    <span class="tech-pill">🌲 Random Forest & XGBoost</span>
+                    <span class="tech-pill">📊 Pandas & NumPy</span>
+                    <span class="tech-pill">📈 Matplotlib & Seaborn</span>
+                    <span class="tech-pill">🌐 Streamlit / Flask Web Framework</span>
+                    <span class="tech-pill">🚀 Render Cloud Platform</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="detail-footer">
+            <p data-i18n="alz.footer">&copy; 2026 Phumrapee Kaewmanee. Alzheimer's Disease Prediction Platform. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../lang.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
