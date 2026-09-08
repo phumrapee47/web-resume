@@ -1210,6 +1210,25 @@ body.dark-mode .project-badge {
     max-width: 80ch;
 }
 
+.interests-cta {
+    margin-top: var(--space-lg);
+    padding: var(--space-lg);
+    border: 1px solid var(--color-rule);
+    border-radius: var(--radius-card);
+    background: var(--color-paper-2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+}
+
+.interests-cta-desc {
+    max-width: 56ch;
+    color: var(--color-ink-2);
+    font-size: var(--text-sm);
+}
+
 /* ============ FOOTER ============ */
 .footer {
     display: flex;

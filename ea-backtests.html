@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA Backtest Portfolio | Phumrapee Kaewmanee</title>
+    <meta name="description" content="Expert Advisor backtest performance showcase — MetaTrader 5 Strategy Tester results for 8 algorithmic trading systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+
+    <div class="shell">
+        <!-- Rail Navigation -->
+        <aside class="rail" id="rail">
+            <div class="rail-top">
+                <a href="index.html" class="rail-mark" aria-label="Back to home">PK</a>
+            </div>
+            <nav class="rail-nav" aria-label="Page navigation">
+                <a href="index.html#interests" class="rail-link"><span class="rail-link-num">&larr;</span><span data-i18n="int.nav.backhome">Back to Resume</span></a>
+            </nav>
+            <div class="rail-bottom">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="content" id="top">
+            <main>
+                <!-- EA Backtest Portfolio -->
+                <section class="section" id="ea-portfolio">
+                    <h2 class="section-title" data-i18n="idx.int.backtest.title">Backtest Performance Showcase</h2>
+                    <p class="interests-subtitle-desc" data-i18n="idx.int.backtest.desc">8 Expert Advisors backtested on XAUUSDm (M5) via the MetaTrader 5 Strategy Tester, Jan–Sep 2026. Metrics pulled directly from the generated HTML reports.</p>
+
+                    <div class="ea-grid">
+                        <!-- SmartGridONNX (Featured) -->
+                        <div class="ea-card featured tile-lg spot">
+                            <div class="ea-card-header">
+                                <h4 class="ea-name"><a href="projects/ea-reports/smartgrid-onnx.html" class="ea-name-link">SmartGridONNX</a></h4>
+                                <span class="project-badge" data-i18n="idx.int.badge.pf">Best Profit Factor</span>
+                            </div>
+                            <span class="ea-meta">XAUUSDm • M5 Strategy Tester</span>
+                            <div class="ea-stats">
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.profit">Net Profit</span>
+                                    <span class="ea-stat-value is-positive">$63,302.30</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.winrate">Win Rate</span>
+                                    <span class="ea-stat-value">68.07%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.pf">Profit Factor</span>
+                                    <span class="ea-stat-value">2.06</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.dd">Max Drawdown</span>
+                                    <span class="ea-stat-value is-risk">5.77%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</span>
+                                    <span class="ea-stat-value">3.45</span>
+                                </div>
+                            </div>
+                            <div class="ea-card-footer">
+                                <a href="projects/ea-reports/smartgrid-onnx.html" class="btn-view-details" data-i18n="idx.int.viewreport">View Full Backtest Report →</a>
+                            </div>
+                        </div>
+
+                        <!-- Sniper_ML_EA -->
+                        <div class="ea-card tile-sm spot">
+                            <div class="ea-card-header">
+                                <h4 class="ea-name"><a href="projects/ea-reports/sniper-ml-ea.html" class="ea-name-link">Sniper_ML_EA</a></h4>
+                            </div>
+                            <span class="ea-meta">XAUUSDm • M5 Strategy Tester</span>
+                            <div class="ea-stats">
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.profit">Net Profit</span>
+                                    <span class="ea-stat-value is-positive">$2,269.89</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.winrate">Win Rate</span>
+                                    <span class="ea-stat-value">32.89%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.pf">Profit Factor</span>
+                                    <span class="ea-stat-value">1.22</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.dd">Max Drawdown</span>
+                                    <span class="ea-stat-value is-risk">22.98%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</span>
+                                    <span class="ea-stat-value">3.14</span>
+                                </div>
+                            </div>
+                            <div class="ea-card-footer">
+                                <a href="projects/ea-reports/sniper-ml-ea.html" class="btn-view-details" data-i18n="idx.int.viewreport">View Full Backtest Report →</a>
+                            </div>
+                        </div>
+
+                        <!-- GoldSniper_AI (Featured) -->
+                        <div class="ea-card featured tile-lg spot">
+                            <div class="ea-card-header">
+                                <h4 class="ea-name"><a href="projects/ea-reports/goldsniper-ai-backtest.html" class="ea-name-link">GoldSniper_AI</a></h4>
+                                <span class="project-badge" data-i18n="idx.int.badge.sharpe">Highest Sharpe Ratio</span>
+                            </div>
+                            <span class="ea-meta">XAUUSDm • M5 Strategy Tester</span>
+                            <div class="ea-stats">
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.profit">Net Profit</span>
+                                    <span class="ea-stat-value is-positive">$28,724.59</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.winrate">Win Rate</span>
+                                    <span class="ea-stat-value">72.36%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.pf">Profit Factor</span>
+                                    <span class="ea-stat-value">1.30</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.dd">Max Drawdown</span>
+                                    <span class="ea-stat-value is-risk">7.90%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</span>
+                                    <span class="ea-stat-value">9.66</span>
+                                </div>
+                            </div>
+                            <div class="ea-card-footer">
+                                <a href="projects/ea-reports/goldsniper-ai-backtest.html" class="btn-view-details" data-i18n="idx.int.viewreport">View Full Backtest Report →</a>
+                            </div>
+                        </div>
+
+                        <!-- BB_RSI_Vol_EA -->
+                        <div class="ea-card tile-sm spot">
+                            <div class="ea-card-header">
+                                <h4 class="ea-name"><a href="projects/ea-reports/bb-rsi-vol-ea.html" class="ea-name-link">BB_RSI_Vol_EA</a></h4>
+                            </div>
+                            <span class="ea-meta">XAUUSDm • M5 Strategy Tester</span>
+                            <div class="ea-stats">
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.profit">Net Profit</span>
+                                    <span class="ea-stat-value is-positive">$361.57</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.winrate">Win Rate</span>
+                                    <span class="ea-stat-value">45.28%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.pf">Profit Factor</span>
+                                    <span class="ea-stat-value">1.24</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.dd">Max Drawdown</span>
+                                    <span class="ea-stat-value is-risk">2.86%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</span>
+                                    <span class="ea-stat-value">8.60</span>
+                                </div>
+                            </div>
+                            <div class="ea-card-footer">
+                                <a href="projects/ea-reports/bb-rsi-vol-ea.html" class="btn-view-details" data-i18n="idx.int.viewreport">View Full Backtest Report →</a>
+                            </div>
+                        </div>
+
+                        <!-- ICT_MarketStructure_EA -->
+                        <div class="ea-card tile-md spot">
+                            <div class="ea-card-header">
+                                <h4 class="ea-name"><a href="projects/ea-reports/ict-market-structure-ea.html" class="ea-name-link">ICT_MarketStructure_EA</a></h4>
+                            </div>
+                            <span class="ea-meta">XAUUSDm • M5 Strategy Tester</span>
+                            <div class="ea-stats">
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.profit">Net Profit</span>
+                                    <span class="ea-stat-value is-positive">$1,215.94</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.winrate">Win Rate</span>
+                                    <span class="ea-stat-value">35.41%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.pf">Profit Factor</span>
+                                    <span class="ea-stat-value">1.23</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.dd">Max Drawdown</span>
+                                    <span class="ea-stat-value is-risk">6.99%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</span>
+                                    <span class="ea-stat-value">2.00</span>
+                                </div>
+                            </div>
+                            <div class="ea-card-footer">
+                                <a href="projects/ea-reports/ict-market-structure-ea.html" class="btn-view-details" data-i18n="idx.int.viewreport">View Full Backtest Report →</a>
+                            </div>
+                        </div>
+
+                        <!-- RSI_Swing_CHoCH_Fibo_EA -->
+                        <div class="ea-card tile-md spot">
+                            <div class="ea-card-header">
+                                <h4 class="ea-name"><a href="projects/ea-reports/rsi-swing-choch-fibo-ea.html" class="ea-name-link">RSI_Swing_CHoCH_Fibo_EA</a></h4>
+                            </div>
+                            <span class="ea-meta">XAUUSDm • M5 Strategy Tester</span>
+                            <div class="ea-stats">
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.profit">Net Profit</span>
+                                    <span class="ea-stat-value is-positive">$383.60</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.winrate">Win Rate</span>
+                                    <span class="ea-stat-value">68.37%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.pf">Profit Factor</span>
+                                    <span class="ea-stat-value">1.21</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.dd">Max Drawdown</span>
+                                    <span class="ea-stat-value is-risk">5.28%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</span>
+                                    <span class="ea-stat-value">4.54</span>
+                                </div>
+                            </div>
+                            <div class="ea-card-footer">
+                                <a href="projects/ea-reports/rsi-swing-choch-fibo-ea.html" class="btn-view-details" data-i18n="idx.int.viewreport">View Full Backtest Report →</a>
+                            </div>
+                        </div>
+
+                        <!-- EmaCrossBias -->
+                        <div class="ea-card tile-md spot">
+                            <div class="ea-card-header">
+                                <h4 class="ea-name"><a href="projects/ea-reports/ema-cross-bias.html" class="ea-name-link">EmaCrossBias</a></h4>
+                            </div>
+                            <span class="ea-meta">XAUUSDm • M5 Strategy Tester</span>
+                            <div class="ea-stats">
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.profit">Net Profit</span>
+                                    <span class="ea-stat-value is-positive">$488.52</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.winrate">Win Rate</span>
+                                    <span class="ea-stat-value">68.85%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.pf">Profit Factor</span>
+                                    <span class="ea-stat-value">1.10</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.dd">Max Drawdown</span>
+                                    <span class="ea-stat-value is-risk">10.49%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</span>
+                                    <span class="ea-stat-value">1.38</span>
+                                </div>
+                            </div>
+                            <div class="ea-card-footer">
+                                <a href="projects/ea-reports/ema-cross-bias.html" class="btn-view-details" data-i18n="idx.int.viewreport">View Full Backtest Report →</a>
+                            </div>
+                        </div>
+
+                        <!-- ml_godmode_xauusd_supersniper -->
+                        <div class="ea-card tile-md spot">
+                            <div class="ea-card-header">
+                                <h4 class="ea-name"><a href="projects/ea-reports/ml-godmode-supersniper.html" class="ea-name-link">ml_godmode_xauusd_supersniper</a></h4>
+                            </div>
+                            <span class="ea-meta">XAUUSDm • M5 Strategy Tester</span>
+                            <div class="ea-stats">
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.profit">Net Profit</span>
+                                    <span class="ea-stat-value is-positive">$953.63</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.winrate">Win Rate</span>
+                                    <span class="ea-stat-value">38.16%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.pf">Profit Factor</span>
+                                    <span class="ea-stat-value">1.18</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.dd">Max Drawdown</span>
+                                    <span class="ea-stat-value is-risk">9.52%</span>
+                                </div>
+                                <div class="ea-stat">
+                                    <span class="ea-stat-label" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</span>
+                                    <span class="ea-stat-value">6.34</span>
+                                </div>
+                            </div>
+                            <div class="ea-card-footer">
+                                <a href="projects/ea-reports/ml-godmode-supersniper.html" class="btn-view-details" data-i18n="idx.int.viewreport">View Full Backtest Report →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="interests-disclaimer" data-i18n="idx.int.disclaimer">Disclaimer: Results are historical Strategy Tester simulations on a demo account (Exness-MT5Trial14) using modeled tick data. Past backtest performance does not guarantee future or live trading results.</p>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p data-i18n="idx.footer">&copy; 2026 .Phumrapee Kaewmane.All rights reserved.</p>
+                <a href="#top" class="footer-top" aria-label="Back to top">↑</a>
+            </footer>
+        </div>
+    </div>
+
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

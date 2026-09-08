@@ -719,8 +719,8 @@
             th: 'ความชอบส่วนตัว: การวิเคราะห์กราฟและพัฒนาระบบเทรดอัตโนมัติ'
         },
         'idx.int.intro': {
-            en: "Outside of coursework and client projects, I spend my personal time studying technical chart analysis &amp; price action (Smart Money Concepts, liquidity, market structure), writing Pine Script indicators and strategies on TradingView, and building automated trading algorithms in MQL5 — often experimenting with Machine Learning and ONNX Runtime inference. The Expert Advisors below are backtested on MetaTrader 5's Strategy Tester as part of that ongoing practice.",
-            th: 'นอกเวลาเรียนและงานลูกค้า ผมใช้เวลาส่วนตัวศึกษาการวิเคราะห์กราฟเทคนิคอลและ Price Action (Smart Money Concepts, Liquidity, Market Structure), เขียน Indicator/Strategy ด้วย Pine Script บน TradingView และพัฒนาอัลกอริทึมเทรดอัตโนมัติด้วย MQL5 พร้อมทดลองผสาน Machine Learning และ ONNX Runtime เข้ากับระบบเทรด โดย Expert Advisor ด้านล่างคือผลทดสอบ Backtest จริงจาก Strategy Tester ของ MetaTrader 5 ที่เป็นส่วนหนึ่งของการฝึกฝนนี้'
+            en: "Outside of coursework, I spend my personal time studying technical chart analysis &amp; price action (Smart Money Concepts, liquidity, market structure), writing Pine Script indicators and strategies on TradingView, and building automated trading algorithms in MQL5 — often experimenting with Machine Learning and ONNX Runtime inference. The Expert Advisors I build are backtested on MetaTrader 5's Strategy Tester as part of that ongoing practice.",
+            th: 'นอกเวลาเรียน ผมใช้เวลาส่วนตัวศึกษาการวิเคราะห์กราฟเทคนิคอลและ Price Action (Smart Money Concepts, Liquidity, Market Structure), เขียน Indicator/Strategy ด้วย Pine Script บน TradingView และพัฒนาอัลกอริทึมเทรดอัตโนมัติด้วย MQL5 พร้อมทดลองผสาน Machine Learning และ ONNX Runtime เข้ากับระบบเทรด โดย Expert Advisor ที่ผมพัฒนาผ่านการทดสอบ Backtest จริงจาก Strategy Tester ของ MetaTrader 5 ที่เป็นส่วนหนึ่งของการฝึกฝนนี้'
         },
         'idx.int.focus1.title': { en: 'Technical & Price Action Analysis', th: 'การวิเคราะห์กราฟเทคนิคอล & Price Action' },
         'idx.int.focus1.desc': {
@@ -742,6 +742,11 @@
             en: '8 Expert Advisors backtested on XAUUSDm (M5) via the MetaTrader 5 Strategy Tester, Jan–Sep 2026. Metrics pulled directly from the generated HTML reports.',
             th: 'Expert Advisor ทั้ง 8 ตัว ผ่านการทดสอบ Backtest บนคู่เงิน XAUUSDm (Timeframe M5) ด้วย Strategy Tester ของ MetaTrader 5 ช่วงเดือนมกราคม–กันยายน 2026 โดยดึงค่าสถิติมาจากรายงาน HTML ที่ระบบสร้างขึ้นจริง'
         },
+        'idx.int.cta.desc': {
+            en: 'Curious about the numbers? See the full backtest breakdown for all 8 Expert Advisors — win rate, drawdown, profit factor, and more.',
+            th: 'อยากดูตัวเลขแบบละเอียด? ดูผลทดสอบ Backtest แบบเต็มของ Expert Advisor ทั้ง 8 ตัว — Win Rate, Drawdown, Profit Factor และอื่นๆ'
+        },
+        'idx.int.cta.btn': { en: 'View EA Backtest Portfolio →', th: 'ดูผลงาน Backtest EA ทั้งหมด →' },
         'idx.int.badge.pf': { en: 'Best Profit Factor', th: 'Profit Factor สูงสุด' },
         'idx.int.badge.sharpe': { en: 'Highest Sharpe Ratio', th: 'Sharpe Ratio สูงสุด' },
         'idx.int.stat.profit': { en: 'Net Profit', th: 'กำไรสุทธิ' },
@@ -758,7 +763,8 @@
         // ===================== EA BACKTEST DETAIL (shared across all EA report pages) =====================
         'ea.back': { en: 'Back to Resume', th: 'กลับหน้าหลัก' },
         'ea.badge.tester': { en: 'MT5 Strategy Tester Backtest', th: 'ผลทดสอบ Strategy Tester ของ MT5' },
-        'ea.btn.portfolio': { en: 'Back to Personal Interests', th: 'กลับหน้าความชอบส่วนตัว' },
+        'ea.btn.portfolio': { en: 'Back to Backtest Portfolio', th: 'กลับหน้าผลงาน Backtest EA' },
+        'int.nav.backhome': { en: 'Back to Resume', th: 'กลับหน้าเรซูเม่' },
         'ea.meta.l1': { en: 'Symbol', th: 'สินทรัพย์' },
         'ea.meta.l2': { en: 'Test Period', th: 'ช่วงเวลาทดสอบ' },
         'ea.meta.l3': { en: 'Initial Deposit', th: 'เงินทุนเริ่มต้น' },
