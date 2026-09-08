@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldSniper_AI Backtest Report | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../project-detail.css">
+</head>
+<body>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+    <div class="detail-container">
+        <nav class="top-nav">
+            <a href="../../index.html#interests" class="back-link">
+                <span>&larr;</span data-i18n="ea.back"> Back to Resume
+            </a>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">&#127769;</button>
+            </div>
+        </nav>
+
+        <header class="hero-section">
+            <div class="hero-badge-group">
+                <span class="hero-badge badge-primary" data-i18n="ea.badge.tester">MT5 Strategy Tester Backtest</span>
+                <span class="hero-badge badge-secondary">XAUUSDm &bull; M5</span>
+                <span class="hero-badge badge-warning" data-i18n="idx.int.badge.sharpe">Featured</span>
+            </div>
+            <h1 class="hero-title">GoldSniper_AI</h1>
+            <p class="hero-subtitle" data-i18n="ea.goldsniper_ai_backtest.sub">Backtest of the multi-scale AI regime engine (Trend HFT Scalper + Sideway Martingale Grid) from the GoldSniper AI project.</p>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="ea.meta.l1">Symbol</span>
+                    <span class="meta-value">XAUUSDm</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="ea.meta.l2">Test Period</span>
+                    <span class="meta-value">M5 (2026.01.01 - 2026.09.07)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="ea.meta.l3">Initial Deposit</span>
+                    <span class="meta-value">$5,000.00</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="ea.meta.l4">Total Deals</span>
+                    <span class="meta-value">29,967</span>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="../../index.html#interests" class="action-btn btn-outline" data-i18n="ea.btn.portfolio">Back to Personal Interests</a>
+            </div>
+        </header>
+
+        <main class="content-body">
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="ea.s1.title">Performance Overview</h2>
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <div class="metric-number">$28,724.59</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.profit">Net Profit</div>
+                        <div class="metric-desc">vs $5,000.00 initial deposit</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">72.36%</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.winrate">Win Rate</div>
+                        <div class="metric-desc">10842 / 14,983 profitable trades</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">1.30</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.pf">Profit Factor</div>
+                        <div class="metric-desc">Gross Profit / Gross Loss</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">7.90%</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.dd">Max Drawdown</div>
+                        <div class="metric-desc">Balance Drawdown Maximal</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">9.66</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</div>
+                        <div class="metric-desc">Risk-adjusted return</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="ea.s2.title">Equity Curve</h2>
+                <p class="section-lead" data-i18n="ea.s2.desc">Account balance progression across every closed deal recorded in the MetaTrader 5 Strategy Tester report.</p>
+                <div class="img-container">
+                    <svg class="equity-chart" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Equity curve chart for GoldSniper_AI">
+                        <line class="chart-baseline" x1="14" y1="206" x2="586" y2="206" />
+                        <polygon class="chart-area" points="14.0,206.0 15.9,205.8 17.8,204.9 19.7,205.4 21.6,204.9 23.4,204.7 25.3,205.7 27.2,205.1 29.1,204.6 31.0,202.7 32.9,201.6 34.8,202.2 36.7,202.1 38.5,202.6 40.4,203.1 42.3,202.7 44.2,201.4 46.1,200.8 48.0,199.1 49.9,198.2 51.8,196.7 53.6,197.5 55.5,195.8 57.4,195.8 59.3,194.9 61.2,195.5 63.1,195.4 65.0,192.1 66.9,190.4 68.7,189.6 70.6,184.3 72.5,181.8 74.4,188.1 76.3,186.4 78.2,188.0 80.1,187.4 82.0,185.3 83.8,182.8 85.7,181.7 87.6,180.7 89.5,178.1 91.4,174.8 93.3,172.2 95.2,170.3 97.1,168.6 99.0,167.9 100.8,166.9 102.7,166.5 104.6,165.4 106.5,164.0 108.4,162.3 110.3,161.0 112.2,160.4 114.1,163.7 115.9,162.1 117.8,164.5 119.7,162.8 121.6,164.4 123.5,163.6 125.4,165.2 127.3,163.8 129.2,162.2 131.0,159.7 132.9,159.7 134.8,159.8 136.7,159.2 138.6,158.8 140.5,159.0 142.4,159.3 144.3,158.7 146.1,156.6 148.0,157.0 149.9,155.8 151.8,155.6 153.7,153.6 155.6,152.3 157.5,150.6 159.4,151.2 161.2,147.2 163.1,147.3 165.0,149.1 166.9,148.0 168.8,148.4 170.7,148.6 172.6,146.9 174.5,145.5 176.3,145.3 178.2,143.0 180.1,142.2 182.0,140.6 183.9,137.8 185.8,137.5 187.7,138.3 189.6,138.5 191.5,138.6 193.3,137.5 195.2,137.1 197.1,132.1 199.0,130.7 200.9,131.9 202.8,130.1 204.7,127.1 206.6,126.1 208.4,121.9 210.3,128.1 212.2,126.5 214.1,125.4 216.0,123.0 217.9,121.0 219.8,118.7 221.7,116.0 223.5,112.6 225.4,112.0 227.3,112.3 229.2,110.9 231.1,110.7 233.0,109.0 234.9,106.4 236.8,104.3 238.6,102.6 240.5,100.8 242.4,101.2 244.3,99.0 246.2,97.2 248.1,96.7 250.0,95.2 251.9,94.4 253.7,92.8 255.6,91.9 257.5,93.8 259.4,92.5 261.3,92.3 263.2,93.1 265.1,92.7 267.0,93.7 268.9,93.5 270.7,92.1 272.6,90.5 274.5,92.7 276.4,92.0 278.3,92.3 280.2,96.5 282.1,96.1 284.0,95.8 285.8,94.5 287.7,95.4 289.6,94.1 291.5,93.3 293.4,93.8 295.3,93.5 297.2,91.8 299.1,90.5 300.9,89.7 302.8,89.2 304.7,89.0 306.6,87.6 308.5,86.2 310.4,84.9 312.3,84.2 314.2,82.4 316.0,81.4 317.9,79.4 319.8,77.7 321.7,75.7 323.6,76.8 325.5,76.5 327.4,77.2 329.3,76.6 331.1,75.8 333.0,76.6 334.9,76.0 336.8,75.3 338.7,75.9 340.6,73.7 342.5,71.2 344.4,72.6 346.3,72.0 348.1,70.8 350.0,70.3 351.9,71.2 353.8,70.9 355.7,69.2 357.6,68.2 359.5,68.0 361.4,67.3 363.2,67.8 365.1,67.1 367.0,67.5 368.9,67.1 370.8,66.6 372.7,65.2 374.6,65.7 376.5,67.4 378.3,66.0 380.2,67.3 382.1,67.8 384.0,68.3 385.9,66.9 387.8,63.7 389.7,66.0 391.6,65.9 393.4,64.4 395.3,63.4 397.2,60.9 399.1,60.5 401.0,58.8 402.9,57.3 404.8,57.0 406.7,58.0 408.5,56.8 410.4,57.2 412.3,57.4 414.2,58.7 416.1,58.0 418.0,59.3 419.9,59.1 421.8,59.1 423.7,57.8 425.5,58.4 427.4,56.9 429.3,56.0 431.2,55.4 433.1,54.5 435.0,56.0 436.9,56.3 438.8,55.3 440.6,56.1 442.5,56.2 444.4,55.7 446.3,57.6 448.2,55.8 450.1,54.6 452.0,52.4 453.9,51.4 455.7,51.5 457.6,51.1 459.5,51.1 461.4,50.2 463.3,49.3 465.2,48.6 467.1,48.2 469.0,47.0 470.8,45.2 472.7,47.5 474.6,48.1 476.5,46.6 478.4,45.7 480.3,44.8 482.2,46.3 484.1,45.2 485.9,43.5 487.8,42.3 489.7,43.1 491.6,43.3 493.5,41.9 495.4,41.9 497.3,41.8 499.2,40.5 501.0,40.7 502.9,40.2 504.8,39.8 506.7,39.7 508.6,37.2 510.5,35.4 512.4,36.3 514.3,37.0 516.2,33.2 518.0,33.3 519.9,33.9 521.8,32.8 523.7,32.0 525.6,32.0 527.5,32.2 529.4,32.0 531.3,32.0 533.1,33.9 535.0,33.9 536.9,32.5 538.8,31.0 540.7,29.7 542.6,28.0 544.5,27.1 546.4,26.6 548.2,26.5 550.1,26.5 552.0,25.5 553.9,23.8 555.8,24.6 557.7,23.9 559.6,24.2 561.5,23.6 563.3,24.5 565.2,24.5 567.1,22.8 569.0,19.5 570.9,17.9 572.8,16.3 574.7,17.6 576.6,16.0 578.4,17.3 580.3,17.3 582.2,18.0 584.1,14.1 586.0,14.0 586.0,206 14.0,206" />
+                        <polyline class="chart-line" points="14.0,206.0 15.9,205.8 17.8,204.9 19.7,205.4 21.6,204.9 23.4,204.7 25.3,205.7 27.2,205.1 29.1,204.6 31.0,202.7 32.9,201.6 34.8,202.2 36.7,202.1 38.5,202.6 40.4,203.1 42.3,202.7 44.2,201.4 46.1,200.8 48.0,199.1 49.9,198.2 51.8,196.7 53.6,197.5 55.5,195.8 57.4,195.8 59.3,194.9 61.2,195.5 63.1,195.4 65.0,192.1 66.9,190.4 68.7,189.6 70.6,184.3 72.5,181.8 74.4,188.1 76.3,186.4 78.2,188.0 80.1,187.4 82.0,185.3 83.8,182.8 85.7,181.7 87.6,180.7 89.5,178.1 91.4,174.8 93.3,172.2 95.2,170.3 97.1,168.6 99.0,167.9 100.8,166.9 102.7,166.5 104.6,165.4 106.5,164.0 108.4,162.3 110.3,161.0 112.2,160.4 114.1,163.7 115.9,162.1 117.8,164.5 119.7,162.8 121.6,164.4 123.5,163.6 125.4,165.2 127.3,163.8 129.2,162.2 131.0,159.7 132.9,159.7 134.8,159.8 136.7,159.2 138.6,158.8 140.5,159.0 142.4,159.3 144.3,158.7 146.1,156.6 148.0,157.0 149.9,155.8 151.8,155.6 153.7,153.6 155.6,152.3 157.5,150.6 159.4,151.2 161.2,147.2 163.1,147.3 165.0,149.1 166.9,148.0 168.8,148.4 170.7,148.6 172.6,146.9 174.5,145.5 176.3,145.3 178.2,143.0 180.1,142.2 182.0,140.6 183.9,137.8 185.8,137.5 187.7,138.3 189.6,138.5 191.5,138.6 193.3,137.5 195.2,137.1 197.1,132.1 199.0,130.7 200.9,131.9 202.8,130.1 204.7,127.1 206.6,126.1 208.4,121.9 210.3,128.1 212.2,126.5 214.1,125.4 216.0,123.0 217.9,121.0 219.8,118.7 221.7,116.0 223.5,112.6 225.4,112.0 227.3,112.3 229.2,110.9 231.1,110.7 233.0,109.0 234.9,106.4 236.8,104.3 238.6,102.6 240.5,100.8 242.4,101.2 244.3,99.0 246.2,97.2 248.1,96.7 250.0,95.2 251.9,94.4 253.7,92.8 255.6,91.9 257.5,93.8 259.4,92.5 261.3,92.3 263.2,93.1 265.1,92.7 267.0,93.7 268.9,93.5 270.7,92.1 272.6,90.5 274.5,92.7 276.4,92.0 278.3,92.3 280.2,96.5 282.1,96.1 284.0,95.8 285.8,94.5 287.7,95.4 289.6,94.1 291.5,93.3 293.4,93.8 295.3,93.5 297.2,91.8 299.1,90.5 300.9,89.7 302.8,89.2 304.7,89.0 306.6,87.6 308.5,86.2 310.4,84.9 312.3,84.2 314.2,82.4 316.0,81.4 317.9,79.4 319.8,77.7 321.7,75.7 323.6,76.8 325.5,76.5 327.4,77.2 329.3,76.6 331.1,75.8 333.0,76.6 334.9,76.0 336.8,75.3 338.7,75.9 340.6,73.7 342.5,71.2 344.4,72.6 346.3,72.0 348.1,70.8 350.0,70.3 351.9,71.2 353.8,70.9 355.7,69.2 357.6,68.2 359.5,68.0 361.4,67.3 363.2,67.8 365.1,67.1 367.0,67.5 368.9,67.1 370.8,66.6 372.7,65.2 374.6,65.7 376.5,67.4 378.3,66.0 380.2,67.3 382.1,67.8 384.0,68.3 385.9,66.9 387.8,63.7 389.7,66.0 391.6,65.9 393.4,64.4 395.3,63.4 397.2,60.9 399.1,60.5 401.0,58.8 402.9,57.3 404.8,57.0 406.7,58.0 408.5,56.8 410.4,57.2 412.3,57.4 414.2,58.7 416.1,58.0 418.0,59.3 419.9,59.1 421.8,59.1 423.7,57.8 425.5,58.4 427.4,56.9 429.3,56.0 431.2,55.4 433.1,54.5 435.0,56.0 436.9,56.3 438.8,55.3 440.6,56.1 442.5,56.2 444.4,55.7 446.3,57.6 448.2,55.8 450.1,54.6 452.0,52.4 453.9,51.4 455.7,51.5 457.6,51.1 459.5,51.1 461.4,50.2 463.3,49.3 465.2,48.6 467.1,48.2 469.0,47.0 470.8,45.2 472.7,47.5 474.6,48.1 476.5,46.6 478.4,45.7 480.3,44.8 482.2,46.3 484.1,45.2 485.9,43.5 487.8,42.3 489.7,43.1 491.6,43.3 493.5,41.9 495.4,41.9 497.3,41.8 499.2,40.5 501.0,40.7 502.9,40.2 504.8,39.8 506.7,39.7 508.6,37.2 510.5,35.4 512.4,36.3 514.3,37.0 516.2,33.2 518.0,33.3 519.9,33.9 521.8,32.8 523.7,32.0 525.6,32.0 527.5,32.2 529.4,32.0 531.3,32.0 533.1,33.9 535.0,33.9 536.9,32.5 538.8,31.0 540.7,29.7 542.6,28.0 544.5,27.1 546.4,26.6 548.2,26.5 550.1,26.5 552.0,25.5 553.9,23.8 555.8,24.6 557.7,23.9 559.6,24.2 561.5,23.6 563.3,24.5 565.2,24.5 567.1,22.8 569.0,19.5 570.9,17.9 572.8,16.3 574.7,17.6 576.6,16.0 578.4,17.3 580.3,17.3 582.2,18.0 584.1,14.1 586.0,14.0" />
+                    </svg>
+                    <div class="chart-stats-row">
+                        <div class="chart-stat">
+                            <span class="chart-stat-label" data-i18n="ea.chart.start">Start Balance</span>
+                            <span class="chart-stat-value">$5,000.00</span>
+                        </div>
+                        <div class="chart-stat">
+                            <span class="chart-stat-label" data-i18n="ea.chart.peak">Peak Balance</span>
+                            <span class="chart-stat-value is-peak">$33,811.41</span>
+                        </div>
+                        <div class="chart-stat">
+                            <span class="chart-stat-label" data-i18n="ea.chart.end">Final Balance</span>
+                            <span class="chart-stat-value">$33,724.59</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="ea.s3.title">Win / Loss Distribution</h2>
+                <div class="winloss-bar">
+                    <div class="winloss-seg is-win" style="width:72.36%"></div>
+                    <div class="winloss-seg is-loss" style="width:27.64%"></div>
+                </div>
+                <div class="winloss-legend">
+                    <div class="winloss-legend-item"><span class="winloss-dot is-win"></span><span data-i18n="ea.s3.win">Win</span>: <strong>10842 (72.36%)</strong></div>
+                    <div class="winloss-legend-item"><span class="winloss-dot is-loss"></span><span data-i18n="ea.s3.loss">Loss</span>: <strong>4141 (27.64%)</strong></div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="ea.s4.title">Full Statistics</h2>
+                <div class="spec-table-wrapper">
+                    <table class="spec-table">
+                        <tbody>
+                            <tr><td data-i18n="ea.field.total_trades">Total Trades</td><td>14,983</td></tr>
+                            <tr><td data-i18n="ea.field.total_deals">Total Deals</td><td>29,967</td></tr>
+                            <tr><td data-i18n="ea.field.long_won">Long Trades (Won %)</td><td>7471 (70.82%)</td></tr>
+                            <tr><td data-i18n="ea.field.short_won">Short Trades (Won %)</td><td>7512 (73.90%)</td></tr>
+                            <tr><td data-i18n="ea.field.largest_profit">Largest Profit Trade</td><td>$313.84</td></tr>
+                            <tr><td data-i18n="ea.field.largest_loss">Largest Loss Trade</td><td>-$459.84</td></tr>
+                            <tr><td data-i18n="ea.field.avg_profit">Average Profit Trade</td><td>$11.38</td></tr>
+                            <tr><td data-i18n="ea.field.avg_loss">Average Loss Trade</td><td>-$22.85</td></tr>
+                            <tr><td data-i18n="ea.field.max_consec_win_usd">Max Consecutive Wins ($)</td><td>31 (359.87)</td></tr>
+                            <tr><td data-i18n="ea.field.max_consec_loss_usd">Max Consecutive Losses ($)</td><td>8 (-82.77)</td></tr>
+                            <tr><td data-i18n="ea.field.max_consec_profit_count">Max Consecutive Profit (Count)</td><td>610.84 (18)</td></tr>
+                            <tr><td data-i18n="ea.field.max_consec_loss_count">Max Consecutive Loss (Count)</td><td>-1,290.01 (4)</td></tr>
+                            <tr><td data-i18n="ea.field.avg_consec_wins">Average Consecutive Wins</td><td>4</td></tr>
+                            <tr><td data-i18n="ea.field.avg_consec_losses">Average Consecutive Losses</td><td>1</td></tr>
+                            <tr><td data-i18n="ea.field.min_holding">Minimal Holding Time</td><td>0:00:02</td></tr>
+                            <tr><td data-i18n="ea.field.max_holding">Maximal Holding Time</td><td>10:26:52</td></tr>
+                            <tr><td data-i18n="ea.field.avg_holding">Average Holding Time</td><td>0:25:09</td></tr>
+                            <tr><td data-i18n="ea.field.recovery_factor">Recovery Factor</td><td>19.40</td></tr>
+                            <tr><td data-i18n="ea.field.expected_payoff">Expected Payoff</td><td>$1.92</td></tr>
+                            <tr><td data-i18n="ea.field.ahpr">AHPR</td><td>1.0001 (0.01%)</td></tr>
+                            <tr><td data-i18n="ea.field.ghpr">GHPR</td><td>1.0001 (0.01%)</td></tr>
+                            <tr><td data-i18n="ea.field.lr_correlation">LR Correlation</td><td>0.98</td></tr>
+                            <tr><td data-i18n="ea.field.zscore">Z-Score</td><td>-4.40 (99.74%)</td></tr>
+                            <tr><td data-i18n="ea.field.margin_level">Margin Level</td><td>28759.93%</td></tr>
+                            <tr><td data-i18n="ea.field.balance_dd_abs">Balance Drawdown (Absolute)</td><td>$81.85</td></tr>
+                            <tr><td data-i18n="ea.field.equity_dd_abs">Equity Drawdown (Absolute)</td><td>$96.28</td></tr>
+                            <tr><td data-i18n="ea.field.equity_dd_max">Equity Drawdown (Maximal)</td><td>1,480.39 (8.29%)</td></tr>
+                            <tr><td data-i18n="ea.field.history_quality">History Quality</td><td>99%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <p class="disclaimer-note" data-i18n="idx.int.disclaimer">Disclaimer: Results are historical Strategy Tester simulations on a demo account (Exness-MT5Trial14) using modeled tick data. Past backtest performance does not guarantee future or live trading results.</p>
+        </main>
+
+        <footer class="detail-footer">
+            <p data-i18n="ea.footer">&copy; 2026 Phumrapee Kaewmanee. EA Backtest Report &mdash; generated from MetaTrader 5 Strategy Tester.</p>
+        </footer>
+    </div>
+
+    <script src="../../lang.js"></script>
+    <script src="../../script.js"></script>
+</body>
+</html>

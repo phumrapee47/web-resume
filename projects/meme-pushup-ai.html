@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Push-Up: Gamified Computer Vision Fitness Trainer | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../project-detail.css">
+</head>
+<body>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+    <div class="detail-container">
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <a href="../index.html" class="back-link">
+                <span>←</span data-i18n="mp.back"> Back to Resume
+            </a>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-badge-group">
+                <span class="hero-badge badge-primary" data-i18n="mp.hero.badge1">Computer Vision / Edge AI</span>
+                <span class="hero-badge badge-secondary" data-i18n="mp.hero.badge2">Real-Time Browser Inference</span>
+                <span class="hero-badge badge-warning">Next.js • TensorFlow.js • Supabase</span>
+            </div>
+            <h1 class="hero-title" data-i18n="mp.hero.title">Meme Push-Up: Gamified Computer Vision Fitness Trainer</h1>
+            <p class="hero-subtitle" data-i18n="mp.hero.subtitle">A browser-based push-up trainer that runs YOLOv8 object detection entirely client-side to count reps, track combos, and reward streaks with meme overlays — no server-side video processing required.</p>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="mp.meta.l1">Detection Model</span>
+                    <span class="meta-value" data-i18n="mp.meta.v1">YOLOv8n (TensorFlow.js GraphModel)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="mp.meta.l2">Inference Location</span>
+                    <span class="meta-value" data-i18n="mp.meta.v2">100% Client-Side (WebGL)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="mp.meta.l3">Frontend Stack</span>
+                    <span class="meta-value" data-i18n="mp.meta.v3">Next.js 16 / React 19</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="mp.meta.l4">Persistence</span>
+                    <span class="meta-value" data-i18n="mp.meta.v4">Supabase (PostgreSQL)</span>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="https://github.com/phumrapee47/game_web_programing.git" class="action-btn btn-solid" data-i18n="mp.btn.github" target="_blank" rel="noopener noreferrer">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    View Code on GitHub
+                </a>
+                <a href="../index.html#projects" class="action-btn btn-outline" data-i18n="mp.btn.portfolio">Back to Portfolio</a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content-body">
+            <!-- Live Demo -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="mp.s0.title">Live Demo</h2>
+                <div class="img-container">
+                    <video controls muted playsinline preload="metadata" poster="media/meme-pushup-poster.jpg">
+                        <source src="media/meme-pushup-demo.mp4" type="video/mp4">
+                    </video>
+                    <div class="img-caption" data-i18n="mp.s0.caption">Figure 1: Live screen recording of the rep counter, combo system, and meme reward overlay running in the browser (audio removed).</div>
+                </div>
+            </section>
+
+            <!-- Project Overview -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="mp.s1.title">Project Overview &amp; Motivation</h2>
+                <p class="section-lead" data-i18n="mp.s1.lead">
+                    Most webcam-based fitness demos either require a native mobile app or stream video to a server for pose estimation, adding latency and privacy concerns. <strong>Meme Push-Up</strong> solves this by converting a YOLOv8n model into a TensorFlow.js GraphModel that runs the entire detection pipeline in the browser — rep counting works fully client-side with no video ever leaving the device.
+                </p>
+
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📷</div>
+                        <h4>Client-Side YOLOv8 Detection</h4>
+                        <p>Loads a converted YOLOv8n GraphModel via TensorFlow.js and runs 640×640 inference on live webcam frames every animation frame, decoding boxes with a custom confidence/NMS post-processor.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📏</div>
+                        <h4>Depth-Based Rep Counter</h4>
+                        <p>Tracks the person bounding box's vertical position against a virtual "depth target" line; a full UP → DOWN → UP cycle registers as one completed rep, with a threshold to reject detection noise.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔥</div>
+                        <h4>Combo &amp; Streak Engine</h4>
+                        <p>Reps completed within a 3-second window chain into a combo multiplier. Max combo is tracked per session and drives escalating visual feedback like a rainbow border effect.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h4>Session Persistence</h4>
+                        <p>Completed sessions (rep count + max combo) are saved to Supabase Postgres through Next.js API routes, with a dedicated history page for reviewing and deleting past sessions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gamification & Feedback -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="mp.s2.title">Gamification &amp; Feedback Layer</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎉</div>
+                        <h4>Meme Reward Overlay</h4>
+                        <p>Every 5th completed rep triggers a randomly-positioned meme GIF pop-up with a Framer Motion spring animation, auto-dismissing after 2.5 seconds for positive reinforcement.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h4>Stage Progression</h4>
+                        <p>Session elapsed time is bucketed into four stages (0–15s, 15–30s, 30–60s, 60s+), each driving a distinct on-screen stage overlay to keep the workout feeling alive.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛠️</div>
+                        <h4>Debug Visualization Mode</h4>
+                        <p>A toggleable overlay renders live bounding boxes and the depth target line, making it easy to tune detection thresholds directly against the camera feed.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Architecture -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="mp.s3.title">System Architecture &amp; Data Flow</h2>
+                <div class="architecture-box">
+                    <div class="arch-header">
+                        <h4>Client-Side Detection Pipeline</h4>
+                        <span class="hero-badge badge-primary">Zero Server-Side Video</span>
+                    </div>
+                    <div class="arch-flow">
+                        <div class="flow-step">
+                            <div class="step-num">1</div>
+                            <div class="step-content">
+                                <h5>Camera Capture</h5>
+                                <p>A CameraFeed component requests webcam access via getUserMedia and streams frames into a hidden video element for inference.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">2</div>
+                            <div class="step-content">
+                                <h5>Client-Side Inference</h5>
+                                <p>TensorFlow.js loads the YOLOv8n GraphModel once on mount; each animation frame is resized to 640×640, normalized, and run through executeAsync entirely in WebGL.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">3</div>
+                            <div class="step-content">
+                                <h5>Box Decoding &amp; Person Tracking</h5>
+                                <p>Raw YOLO output is decoded and filtered to class 0 (person) above a confidence/IoU threshold, then rescaled and compared against a virtual bottom-center depth block.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">4</div>
+                            <div class="step-content">
+                                <h5>Rep State Machine</h5>
+                                <p>The usePushUpCounter hook tracks UP/DOWN transitions, increments the rep count on each completed cycle, computes combo windows, and derives the session stage from elapsed time.</p>
+                            </div>
+                        </div>
+                        <div class="flow-step">
+                            <div class="step-num">5</div>
+                            <div class="step-content">
+                                <h5>Persistence &amp; History</h5>
+                                <p>Completed sessions are saved through /api/sessions (Next.js Route Handlers) to Supabase Postgres, with GET/POST/DELETE/PUT endpoints backing a dedicated history view.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tech Stack Tags -->
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="mp.s4.title">Technologies &amp; Stack</h2>
+                <div class="tech-pill-group">
+                    <span class="tech-pill">⚛️ Next.js 16 (App Router)</span>
+                    <span class="tech-pill">⚛️ React 19</span>
+                    <span class="tech-pill">🔷 TypeScript</span>
+                    <span class="tech-pill">🧠 TensorFlow.js</span>
+                    <span class="tech-pill">🎯 YOLOv8n (ONNX → TFJS GraphModel)</span>
+                    <span class="tech-pill">🎬 Framer Motion</span>
+                    <span class="tech-pill">🗄️ Supabase (PostgreSQL)</span>
+                    <span class="tech-pill">🎨 Tailwind CSS 4</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="detail-footer">
+            <p data-i18n="mp.footer">&copy; 2026 Phumrapee Kaewmanee. Meme Push-Up Project. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="../lang.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

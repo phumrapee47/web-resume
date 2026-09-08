@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSI_Swing_CHoCH_Fibo_EA Backtest Report | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../project-detail.css">
+</head>
+<body>
+    <div class="spotlight" id="spotlight" aria-hidden="true"></div>
+    <div class="detail-container">
+        <nav class="top-nav">
+            <a href="../../index.html#interests" class="back-link">
+                <span>&larr;</span data-i18n="ea.back"> Back to Resume
+            </a>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">&#127769;</button>
+            </div>
+        </nav>
+
+        <header class="hero-section">
+            <div class="hero-badge-group">
+                <span class="hero-badge badge-primary" data-i18n="ea.badge.tester">MT5 Strategy Tester Backtest</span>
+                <span class="hero-badge badge-secondary">XAUUSDm &bull; M5</span>
+                
+            </div>
+            <h1 class="hero-title">RSI_Swing_CHoCH_Fibo_EA</h1>
+            <p class="hero-subtitle" data-i18n="ea.rsi_swing_choch_fibo_ea.sub">A swing strategy combining RSI momentum, CHoCH structure shifts, and Fibonacci retracement zones.</p>
+
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="ea.meta.l1">Symbol</span>
+                    <span class="meta-value">XAUUSDm</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="ea.meta.l2">Test Period</span>
+                    <span class="meta-value">M5 (2026.01.01 - 2026.09.07)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="ea.meta.l3">Initial Deposit</span>
+                    <span class="meta-value">$5,000.00</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label" data-i18n="ea.meta.l4">Total Deals</span>
+                    <span class="meta-value">785</span>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="../../index.html#interests" class="action-btn btn-outline" data-i18n="ea.btn.portfolio">Back to Personal Interests</a>
+            </div>
+        </header>
+
+        <main class="content-body">
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="ea.s1.title">Performance Overview</h2>
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <div class="metric-number">$383.60</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.profit">Net Profit</div>
+                        <div class="metric-desc">vs $5,000.00 initial deposit</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">68.37%</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.winrate">Win Rate</div>
+                        <div class="metric-desc">268 / 392 profitable trades</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">1.21</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.pf">Profit Factor</div>
+                        <div class="metric-desc">Gross Profit / Gross Loss</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">5.28%</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.dd">Max Drawdown</div>
+                        <div class="metric-desc">Balance Drawdown Maximal</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">4.54</div>
+                        <div class="metric-title" data-i18n="idx.int.stat.sharpe">Sharpe Ratio</div>
+                        <div class="metric-desc">Risk-adjusted return</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="ea.s2.title">Equity Curve</h2>
+                <p class="section-lead" data-i18n="ea.s2.desc">Account balance progression across every closed deal recorded in the MetaTrader 5 Strategy Tester report.</p>
+                <div class="img-container">
+                    <svg class="equity-chart" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Equity curve chart for RSI_Swing_CHoCH_Fibo_EA">
+                        <line class="chart-baseline" x1="14" y1="182.5" x2="586" y2="182.5" />
+                        <polygon class="chart-area" points="14.0,182.5 15.5,178.4 16.9,180.6 18.4,180.6 19.8,178.6 21.3,180.5 22.8,179.2 24.2,177.7 25.7,179.5 27.1,178.1 28.6,175.5 30.1,183.4 31.5,187.2 33.0,192.1 34.4,194.6 35.9,194.6 37.3,192.4 38.8,190.8 40.3,192.0 41.7,194.4 43.2,203.4 44.6,202.7 46.1,201.6 47.6,202.9 49.0,200.5 50.5,199.3 51.9,196.6 53.4,192.2 54.9,194.4 56.3,196.8 57.8,196.8 59.2,195.6 60.7,193.9 62.2,192.7 63.6,190.9 65.1,193.8 66.5,202.8 68.0,202.8 69.4,199.6 70.9,197.3 72.4,206.0 73.8,191.1 75.3,173.1 76.7,189.9 78.2,186.2 79.7,181.2 81.1,175.9 82.6,172.8 84.0,162.3 85.5,190.3 87.0,186.3 88.4,184.3 89.9,184.3 91.3,186.2 92.8,184.6 94.3,183.6 95.7,180.0 97.2,176.6 98.6,174.9 100.1,173.6 101.6,171.4 103.0,171.4 104.5,169.8 105.9,168.1 107.4,165.0 108.8,162.4 110.3,174.9 111.8,173.4 113.2,172.7 114.7,171.6 116.1,176.9 117.6,169.7 119.1,169.7 120.5,156.2 122.0,154.2 123.4,159.9 124.9,156.2 126.4,156.2 127.8,161.3 129.3,161.3 130.7,162.1 132.2,160.4 133.7,155.5 135.1,152.3 136.6,144.2 138.0,144.2 139.5,125.8 140.9,125.8 142.4,119.1 143.9,116.3 145.3,112.5 146.8,108.0 148.2,102.2 149.7,102.2 151.2,107.9 152.6,106.1 154.1,101.0 155.5,99.5 157.0,98.0 158.5,94.4 159.9,96.9 161.4,96.9 162.8,92.1 164.3,87.6 165.8,90.6 167.2,90.6 168.7,85.9 170.1,84.0 171.6,81.3 173.1,76.3 174.5,46.2 176.0,41.0 177.4,48.0 178.9,43.7 180.3,54.9 181.8,60.0 183.3,58.3 184.7,56.2 186.2,54.2 187.6,51.0 189.1,51.0 190.6,53.0 192.0,53.0 193.5,53.1 194.9,63.3 196.4,61.7 197.9,60.2 199.3,58.1 200.8,58.1 202.2,55.2 203.7,55.2 205.2,50.4 206.6,50.4 208.1,47.0 209.5,47.0 211.0,44.6 212.4,46.4 213.9,45.2 215.4,43.7 216.8,46.3 218.3,50.3 219.7,47.5 221.2,44.5 222.7,44.5 224.1,47.6 225.6,46.6 227.0,45.6 228.5,44.8 230.0,44.8 231.4,41.8 232.9,46.5 234.3,44.9 235.8,44.3 237.3,47.1 238.7,47.1 240.2,45.1 241.6,45.1 243.1,44.2 244.6,44.2 246.0,39.4 247.5,23.3 248.9,25.6 250.4,23.0 251.8,21.0 253.3,27.3 254.8,23.9 256.2,22.6 257.7,21.1 259.1,19.6 260.6,17.1 262.1,14.3 263.5,22.1 265.0,20.8 266.4,19.4 267.9,17.7 269.4,16.2 270.8,15.0 272.3,14.0 273.7,18.5 275.2,20.7 276.7,22.8 278.1,21.6 279.6,29.6 281.0,38.3 282.5,36.0 283.9,34.7 285.4,38.3 286.9,33.5 288.3,31.9 289.8,31.9 291.2,40.7 292.7,40.7 294.2,43.8 295.6,43.8 297.1,43.0 298.5,41.2 300.0,45.4 301.5,50.4 302.9,49.1 304.4,48.4 305.8,50.3 307.3,49.3 308.8,49.3 310.2,47.0 311.7,45.8 313.1,45.8 314.6,43.9 316.1,45.6 317.5,44.3 319.0,43.0 320.4,41.2 321.9,44.4 323.3,44.4 324.8,44.1 326.3,40.8 327.7,39.8 329.2,38.4 330.6,48.2 332.1,48.2 333.6,47.7 335.0,44.2 336.5,45.3 337.9,44.6 339.4,44.6 340.9,41.8 342.3,43.7 343.8,43.7 345.2,41.8 346.7,45.0 348.2,43.4 349.6,59.5 351.1,57.3 352.5,55.8 354.0,55.8 355.4,56.0 356.9,61.8 358.4,61.8 359.8,62.1 361.3,59.6 362.7,57.8 364.2,56.3 365.7,56.3 367.1,54.3 368.6,53.2 370.0,57.1 371.5,62.5 373.0,60.5 374.4,65.6 375.9,64.3 377.3,63.5 378.8,65.5 380.3,65.5 381.7,62.4 383.2,62.4 384.6,62.1 386.1,62.1 387.6,63.6 389.0,62.9 390.5,56.9 391.9,55.6 393.4,54.2 394.8,53.7 396.3,52.5 397.8,55.3 399.2,53.0 400.7,50.4 402.1,49.3 403.6,47.4 405.1,45.7 406.5,44.2 408.0,42.7 409.4,38.6 410.9,41.3 412.4,53.8 413.8,53.8 415.3,54.4 416.7,54.4 418.2,54.8 419.7,52.8 421.1,51.0 422.6,49.9 424.0,47.9 425.5,51.4 426.9,58.7 428.4,64.2 429.9,68.2 431.3,66.4 432.8,65.2 434.2,65.0 435.7,63.4 437.2,60.0 438.6,58.5 440.1,57.5 441.5,60.3 443.0,57.1 444.5,55.5 445.9,58.0 447.4,56.8 448.8,53.8 450.3,57.2 451.8,57.2 453.2,57.2 454.7,56.1 456.1,52.2 457.6,52.2 459.1,59.0 460.5,57.6 462.0,55.4 463.4,53.9 464.9,53.3 466.3,52.8 467.8,54.8 469.3,54.8 470.7,54.0 472.2,61.0 473.6,61.0 475.1,61.1 476.6,61.1 478.0,57.8 479.5,56.3 480.9,56.3 482.4,56.9 483.9,55.8 485.3,55.8 486.8,58.1 488.2,59.8 489.7,62.9 491.2,65.2 492.6,62.6 494.1,62.6 495.5,61.3 497.0,61.3 498.4,60.5 499.9,56.8 501.4,55.9 502.8,55.1 504.3,53.6 505.7,56.5 507.2,58.2 508.7,57.2 510.1,56.7 511.6,54.6 513.0,59.6 514.5,62.9 516.0,64.4 517.4,64.4 518.9,62.3 520.3,62.3 521.8,64.2 523.3,67.0 524.7,66.2 526.2,65.5 527.6,67.8 529.1,66.3 530.6,69.1 532.0,69.1 533.5,69.3 534.9,69.3 536.4,67.8 537.8,66.6 539.3,66.6 540.8,71.9 542.2,74.6 543.7,74.6 545.1,73.0 546.6,71.0 548.1,77.3 549.5,85.1 551.0,85.1 552.4,80.9 553.9,82.3 555.4,82.3 556.8,80.9 558.3,84.3 559.7,87.2 561.2,94.1 562.7,93.6 564.1,97.4 565.6,96.7 567.0,96.7 568.5,93.9 569.9,91.2 571.4,91.2 572.9,89.3 574.3,86.6 575.8,85.4 577.2,84.9 578.7,84.1 580.2,81.9 581.6,81.9 583.1,80.1 584.5,78.5 586.0,74.2 586.0,206 14.0,206" />
+                        <polyline class="chart-line" points="14.0,182.5 15.5,178.4 16.9,180.6 18.4,180.6 19.8,178.6 21.3,180.5 22.8,179.2 24.2,177.7 25.7,179.5 27.1,178.1 28.6,175.5 30.1,183.4 31.5,187.2 33.0,192.1 34.4,194.6 35.9,194.6 37.3,192.4 38.8,190.8 40.3,192.0 41.7,194.4 43.2,203.4 44.6,202.7 46.1,201.6 47.6,202.9 49.0,200.5 50.5,199.3 51.9,196.6 53.4,192.2 54.9,194.4 56.3,196.8 57.8,196.8 59.2,195.6 60.7,193.9 62.2,192.7 63.6,190.9 65.1,193.8 66.5,202.8 68.0,202.8 69.4,199.6 70.9,197.3 72.4,206.0 73.8,191.1 75.3,173.1 76.7,189.9 78.2,186.2 79.7,181.2 81.1,175.9 82.6,172.8 84.0,162.3 85.5,190.3 87.0,186.3 88.4,184.3 89.9,184.3 91.3,186.2 92.8,184.6 94.3,183.6 95.7,180.0 97.2,176.6 98.6,174.9 100.1,173.6 101.6,171.4 103.0,171.4 104.5,169.8 105.9,168.1 107.4,165.0 108.8,162.4 110.3,174.9 111.8,173.4 113.2,172.7 114.7,171.6 116.1,176.9 117.6,169.7 119.1,169.7 120.5,156.2 122.0,154.2 123.4,159.9 124.9,156.2 126.4,156.2 127.8,161.3 129.3,161.3 130.7,162.1 132.2,160.4 133.7,155.5 135.1,152.3 136.6,144.2 138.0,144.2 139.5,125.8 140.9,125.8 142.4,119.1 143.9,116.3 145.3,112.5 146.8,108.0 148.2,102.2 149.7,102.2 151.2,107.9 152.6,106.1 154.1,101.0 155.5,99.5 157.0,98.0 158.5,94.4 159.9,96.9 161.4,96.9 162.8,92.1 164.3,87.6 165.8,90.6 167.2,90.6 168.7,85.9 170.1,84.0 171.6,81.3 173.1,76.3 174.5,46.2 176.0,41.0 177.4,48.0 178.9,43.7 180.3,54.9 181.8,60.0 183.3,58.3 184.7,56.2 186.2,54.2 187.6,51.0 189.1,51.0 190.6,53.0 192.0,53.0 193.5,53.1 194.9,63.3 196.4,61.7 197.9,60.2 199.3,58.1 200.8,58.1 202.2,55.2 203.7,55.2 205.2,50.4 206.6,50.4 208.1,47.0 209.5,47.0 211.0,44.6 212.4,46.4 213.9,45.2 215.4,43.7 216.8,46.3 218.3,50.3 219.7,47.5 221.2,44.5 222.7,44.5 224.1,47.6 225.6,46.6 227.0,45.6 228.5,44.8 230.0,44.8 231.4,41.8 232.9,46.5 234.3,44.9 235.8,44.3 237.3,47.1 238.7,47.1 240.2,45.1 241.6,45.1 243.1,44.2 244.6,44.2 246.0,39.4 247.5,23.3 248.9,25.6 250.4,23.0 251.8,21.0 253.3,27.3 254.8,23.9 256.2,22.6 257.7,21.1 259.1,19.6 260.6,17.1 262.1,14.3 263.5,22.1 265.0,20.8 266.4,19.4 267.9,17.7 269.4,16.2 270.8,15.0 272.3,14.0 273.7,18.5 275.2,20.7 276.7,22.8 278.1,21.6 279.6,29.6 281.0,38.3 282.5,36.0 283.9,34.7 285.4,38.3 286.9,33.5 288.3,31.9 289.8,31.9 291.2,40.7 292.7,40.7 294.2,43.8 295.6,43.8 297.1,43.0 298.5,41.2 300.0,45.4 301.5,50.4 302.9,49.1 304.4,48.4 305.8,50.3 307.3,49.3 308.8,49.3 310.2,47.0 311.7,45.8 313.1,45.8 314.6,43.9 316.1,45.6 317.5,44.3 319.0,43.0 320.4,41.2 321.9,44.4 323.3,44.4 324.8,44.1 326.3,40.8 327.7,39.8 329.2,38.4 330.6,48.2 332.1,48.2 333.6,47.7 335.0,44.2 336.5,45.3 337.9,44.6 339.4,44.6 340.9,41.8 342.3,43.7 343.8,43.7 345.2,41.8 346.7,45.0 348.2,43.4 349.6,59.5 351.1,57.3 352.5,55.8 354.0,55.8 355.4,56.0 356.9,61.8 358.4,61.8 359.8,62.1 361.3,59.6 362.7,57.8 364.2,56.3 365.7,56.3 367.1,54.3 368.6,53.2 370.0,57.1 371.5,62.5 373.0,60.5 374.4,65.6 375.9,64.3 377.3,63.5 378.8,65.5 380.3,65.5 381.7,62.4 383.2,62.4 384.6,62.1 386.1,62.1 387.6,63.6 389.0,62.9 390.5,56.9 391.9,55.6 393.4,54.2 394.8,53.7 396.3,52.5 397.8,55.3 399.2,53.0 400.7,50.4 402.1,49.3 403.6,47.4 405.1,45.7 406.5,44.2 408.0,42.7 409.4,38.6 410.9,41.3 412.4,53.8 413.8,53.8 415.3,54.4 416.7,54.4 418.2,54.8 419.7,52.8 421.1,51.0 422.6,49.9 424.0,47.9 425.5,51.4 426.9,58.7 428.4,64.2 429.9,68.2 431.3,66.4 432.8,65.2 434.2,65.0 435.7,63.4 437.2,60.0 438.6,58.5 440.1,57.5 441.5,60.3 443.0,57.1 444.5,55.5 445.9,58.0 447.4,56.8 448.8,53.8 450.3,57.2 451.8,57.2 453.2,57.2 454.7,56.1 456.1,52.2 457.6,52.2 459.1,59.0 460.5,57.6 462.0,55.4 463.4,53.9 464.9,53.3 466.3,52.8 467.8,54.8 469.3,54.8 470.7,54.0 472.2,61.0 473.6,61.0 475.1,61.1 476.6,61.1 478.0,57.8 479.5,56.3 480.9,56.3 482.4,56.9 483.9,55.8 485.3,55.8 486.8,58.1 488.2,59.8 489.7,62.9 491.2,65.2 492.6,62.6 494.1,62.6 495.5,61.3 497.0,61.3 498.4,60.5 499.9,56.8 501.4,55.9 502.8,55.1 504.3,53.6 505.7,56.5 507.2,58.2 508.7,57.2 510.1,56.7 511.6,54.6 513.0,59.6 514.5,62.9 516.0,64.4 517.4,64.4 518.9,62.3 520.3,62.3 521.8,64.2 523.3,67.0 524.7,66.2 526.2,65.5 527.6,67.8 529.1,66.3 530.6,69.1 532.0,69.1 533.5,69.3 534.9,69.3 536.4,67.8 537.8,66.6 539.3,66.6 540.8,71.9 542.2,74.6 543.7,74.6 545.1,73.0 546.6,71.0 548.1,77.3 549.5,85.1 551.0,85.1 552.4,80.9 553.9,82.3 555.4,82.3 556.8,80.9 558.3,84.3 559.7,87.2 561.2,94.1 562.7,93.6 564.1,97.4 565.6,96.7 567.0,96.7 568.5,93.9 569.9,91.2 571.4,91.2 572.9,89.3 574.3,86.6 575.8,85.4 577.2,84.9 578.7,84.1 580.2,81.9 581.6,81.9 583.1,80.1 584.5,78.5 586.0,74.2" />
+                    </svg>
+                    <div class="chart-stats-row">
+                        <div class="chart-stat">
+                            <span class="chart-stat-label" data-i18n="ea.chart.start">Start Balance</span>
+                            <span class="chart-stat-value">$5,000.00</span>
+                        </div>
+                        <div class="chart-stat">
+                            <span class="chart-stat-label" data-i18n="ea.chart.peak">Peak Balance</span>
+                            <span class="chart-stat-value is-peak">$5,596.88</span>
+                        </div>
+                        <div class="chart-stat">
+                            <span class="chart-stat-label" data-i18n="ea.chart.end">Final Balance</span>
+                            <span class="chart-stat-value">$5,383.60</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="ea.s3.title">Win / Loss Distribution</h2>
+                <div class="winloss-bar">
+                    <div class="winloss-seg is-win" style="width:68.37%"></div>
+                    <div class="winloss-seg is-loss" style="width:31.63%"></div>
+                </div>
+                <div class="winloss-legend">
+                    <div class="winloss-legend-item"><span class="winloss-dot is-win"></span><span data-i18n="ea.s3.win">Win</span>: <strong>268 (68.37%)</strong></div>
+                    <div class="winloss-legend-item"><span class="winloss-dot is-loss"></span><span data-i18n="ea.s3.loss">Loss</span>: <strong>124 (31.63%)</strong></div>
+                </div>
+            </section>
+
+            <section class="detail-section">
+                <h2 class="section-title" data-i18n="ea.s4.title">Full Statistics</h2>
+                <div class="spec-table-wrapper">
+                    <table class="spec-table">
+                        <tbody>
+                            <tr><td data-i18n="ea.field.total_trades">Total Trades</td><td>392</td></tr>
+                            <tr><td data-i18n="ea.field.total_deals">Total Deals</td><td>785</td></tr>
+                            <tr><td data-i18n="ea.field.long_won">Long Trades (Won %)</td><td>187 (66.84%)</td></tr>
+                            <tr><td data-i18n="ea.field.short_won">Short Trades (Won %)</td><td>205 (69.76%)</td></tr>
+                            <tr><td data-i18n="ea.field.largest_profit">Largest Profit Trade</td><td>$106.51</td></tr>
+                            <tr><td data-i18n="ea.field.largest_loss">Largest Loss Trade</td><td>-$99.18</td></tr>
+                            <tr><td data-i18n="ea.field.avg_profit">Average Profit Trade</td><td>$8.40</td></tr>
+                            <tr><td data-i18n="ea.field.avg_loss">Average Loss Trade</td><td>-$15.07</td></tr>
+                            <tr><td data-i18n="ea.field.max_consec_win_usd">Max Consecutive Wins ($)</td><td>12 (212.25)</td></tr>
+                            <tr><td data-i18n="ea.field.max_consec_loss_usd">Max Consecutive Losses ($)</td><td>4 (-71.77)</td></tr>
+                            <tr><td data-i18n="ea.field.max_consec_profit_count">Max Consecutive Profit (Count)</td><td>212.25 (12)</td></tr>
+                            <tr><td data-i18n="ea.field.max_consec_loss_count">Max Consecutive Loss (Count)</td><td>-99.18 (1)</td></tr>
+                            <tr><td data-i18n="ea.field.avg_consec_wins">Average Consecutive Wins</td><td>3</td></tr>
+                            <tr><td data-i18n="ea.field.avg_consec_losses">Average Consecutive Losses</td><td>2</td></tr>
+                            <tr><td data-i18n="ea.field.min_holding">Minimal Holding Time</td><td>0:00:01</td></tr>
+                            <tr><td data-i18n="ea.field.max_holding">Maximal Holding Time</td><td>13:28:32</td></tr>
+                            <tr><td data-i18n="ea.field.avg_holding">Average Holding Time</td><td>1:06:05</td></tr>
+                            <tr><td data-i18n="ea.field.recovery_factor">Recovery Factor</td><td>1.25</td></tr>
+                            <tr><td data-i18n="ea.field.expected_payoff">Expected Payoff</td><td>$0.98</td></tr>
+                            <tr><td data-i18n="ea.field.ahpr">AHPR</td><td>1.0002 (0.02%)</td></tr>
+                            <tr><td data-i18n="ea.field.ghpr">GHPR</td><td>1.0002 (0.02%)</td></tr>
+                            <tr><td data-i18n="ea.field.lr_correlation">LR Correlation</td><td>0.63</td></tr>
+                            <tr><td data-i18n="ea.field.zscore">Z-Score</td><td>-0.59 (44.48%)</td></tr>
+                            <tr><td data-i18n="ea.field.margin_level">Margin Level</td><td>114849.79%</td></tr>
+                            <tr><td data-i18n="ea.field.balance_dd_abs">Balance Drawdown (Absolute)</td><td>$83.07</td></tr>
+                            <tr><td data-i18n="ea.field.equity_dd_abs">Equity Drawdown (Absolute)</td><td>$162.34</td></tr>
+                            <tr><td data-i18n="ea.field.equity_dd_max">Equity Drawdown (Maximal)</td><td>305.77 (5.46%)</td></tr>
+                            <tr><td data-i18n="ea.field.history_quality">History Quality</td><td>99%</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <p class="disclaimer-note" data-i18n="idx.int.disclaimer">Disclaimer: Results are historical Strategy Tester simulations on a demo account (Exness-MT5Trial14) using modeled tick data. Past backtest performance does not guarantee future or live trading results.</p>
+        </main>
+
+        <footer class="detail-footer">
+            <p data-i18n="ea.footer">&copy; 2026 Phumrapee Kaewmanee. EA Backtest Report &mdash; generated from MetaTrader 5 Strategy Tester.</p>
+        </footer>
+    </div>
+
+    <script src="../../lang.js"></script>
+    <script src="../../script.js"></script>
+</body>
+</html>

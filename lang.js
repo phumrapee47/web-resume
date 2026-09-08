@@ -20,8 +20,8 @@
 
         // Hero (redesign additions — UI chrome only, no invented facts)
         'hero.role': {
-            en: 'Full-Stack Developer & Quant Systems Engineer',
-            th: 'นักพัฒนา Full-Stack และวิศวกรระบบเทรดเชิงปริมาณ'
+            en: 'Full-Stack Developer & AI / Data Analyst',
+            th: 'นักพัฒนา Full-Stack และนักวิเคราะห์ข้อมูล AI'
         },
         'hero.cta.projects': { en: 'View Projects', th: 'ดูผลงาน' },
         'hero.cta.contact': { en: 'Get in Touch', th: 'ติดต่อ' },
@@ -293,6 +293,37 @@
         'idx.proj.alz.btn': {
             en: 'View ML Platform Details →',
             th: 'ดูรายละเอียดระบบ ML →'
+        },
+
+        // Computer Vision Group
+        'idx.proj.cv.group': {
+            en: 'AI Computer Vision & Interactive Applications',
+            th: 'แอปพลิเคชัน AI Computer Vision เชิงโต้ตอบ'
+        },
+        'idx.proj.mp.badge': { en: 'Computer Vision / Gamified Web App', th: 'Computer Vision / เว็บแอปแนวเกม' },
+        'idx.proj.mp.title': {
+            en: 'Meme Push-Up: Gamified AI Fitness Tracker',
+            th: 'Meme Push-Up: แอปออกกำลังกาย AI แนวเกม'
+        },
+        'idx.proj.mp.f1': {
+            en: '<strong>Client-Side YOLOv8 Object Detection:</strong> Real-time person tracking entirely in-browser via a TensorFlow.js GraphModel — no server-side video processing',
+            th: '<strong>YOLOv8 Object Detection ฝั่ง Client:</strong> ตรวจจับตำแหน่งคนแบบ Real-time ในเบราว์เซอร์ผ่าน TensorFlow.js GraphModel ไม่ต้องประมวลผลวิดีโอที่ Server'
+        },
+        'idx.proj.mp.f2': {
+            en: '<strong>Depth-Based Rep Counting:</strong> Bounding-box state machine detects UP/DOWN transitions against a virtual depth target to count push-up reps',
+            th: '<strong>นับจำนวนครั้งจากความลึก:</strong> State Machine ตรวจจับการเปลี่ยนสถานะ UP/DOWN เทียบกับเส้นเป้าหมายเสมือน เพื่อนับจำนวนครั้งของท่าวิดพื้น'
+        },
+        'idx.proj.mp.f3': {
+            en: '<strong>Combo & Streak Gamification:</strong> Timing-based combo multiplier with random meme GIF reward overlays every 5 reps (Framer Motion animations)',
+            th: '<strong>ระบบ Combo แบบเกม:</strong> คูณคะแนน Combo ตามจังหวะเวลา พร้อมป๊อปอัป Meme GIF สุ่มทุก 5 ครั้ง (แอนิเมชันด้วย Framer Motion)'
+        },
+        'idx.proj.mp.f4': {
+            en: '<strong>Session History & Persistence:</strong> Supabase-backed REST API to save, list, and delete workout sessions (rep count & max combo)',
+            th: '<strong>ประวัติเซสชันและการบันทึกข้อมูล:</strong> REST API เชื่อม Supabase สำหรับบันทึก แสดง และลบเซสชันการออกกำลังกาย (จำนวนครั้งและ Max Combo)'
+        },
+        'idx.proj.mp.btn': {
+            en: 'View Computer Vision Project Details →',
+            th: 'ดูรายละเอียดโปรเจกต์ Computer Vision →'
         },
 
         // Key Features (shared)
@@ -639,6 +670,177 @@
         'alz.footer': {
             en: "&copy; 2026 Phumrapee Kaewmanee. Alzheimer's Disease Prediction Platform. All rights reserved.",
             th: '&copy; 2026 ภูมิรพี แก้วมณี ระบบทำนายโรคอัลไซเมอร์ สงวนลิขสิทธิ์ทุกประการ'
+        },
+
+        // ===================== MEME PUSH-UP DETAIL =====================
+        'mp.back': { en: 'Back to Resume', th: 'กลับหน้าหลัก' },
+        'mp.hero.badge1': { en: 'Computer Vision / Edge AI', th: 'Computer Vision / Edge AI' },
+        'mp.hero.badge2': { en: 'Real-Time Browser Inference', th: 'ประมวลผล Real-Time ในเบราว์เซอร์' },
+        'mp.hero.title': {
+            en: 'Meme Push-Up: Gamified Computer Vision Fitness Trainer',
+            th: 'Meme Push-Up: โค้ชออกกำลังกายด้วย Computer Vision แนวเกม'
+        },
+        'mp.hero.subtitle': {
+            en: 'A browser-based push-up trainer that runs YOLOv8 object detection entirely client-side to count reps, track combos, and reward streaks with meme overlays — no server-side video processing required.',
+            th: 'แอปฝึกวิดพื้นบนเว็บเบราว์เซอร์ที่รัน YOLOv8 Object Detection ทั้งหมดฝั่ง Client เพื่อนับจำนวนครั้ง ติดตาม Combo และให้รางวัลด้วย Meme Overlay โดยไม่ต้องประมวลผลวิดีโอที่ Server'
+        },
+        'mp.meta.l1': { en: 'Detection Model', th: 'โมเดลตรวจจับ' },
+        'mp.meta.v1': { en: 'YOLOv8n (TensorFlow.js GraphModel)', th: 'YOLOv8n (TensorFlow.js GraphModel)' },
+        'mp.meta.l2': { en: 'Inference Location', th: 'ตำแหน่งการประมวลผล' },
+        'mp.meta.v2': { en: '100% Client-Side (WebGL)', th: '100% ฝั่ง Client (WebGL)' },
+        'mp.meta.l3': { en: 'Frontend Stack', th: 'Frontend Stack' },
+        'mp.meta.v3': { en: 'Next.js 16 / React 19', th: 'Next.js 16 / React 19' },
+        'mp.meta.l4': { en: 'Persistence', th: 'การบันทึกข้อมูล' },
+        'mp.meta.v4': { en: 'Supabase (PostgreSQL)', th: 'Supabase (PostgreSQL)' },
+        'mp.btn.github': { en: 'View Code on GitHub', th: 'ดูโค้ดบน GitHub' },
+        'mp.btn.portfolio': { en: 'Back to Portfolio', th: 'กลับหน้าผลงาน' },
+        'mp.s0.title': { en: 'Live Demo', th: 'วิดีโอสาธิต' },
+        'mp.s0.caption': {
+            en: 'Figure 1: Live screen recording of the rep counter, combo system, and meme reward overlay running in the browser (audio removed).',
+            th: 'ภาพที่ 1: วิดีโอสาธิตการทำงานจริงของระบบนับจำนวนครั้ง ระบบ Combo และ Meme Reward Overlay ที่รันในเบราว์เซอร์ (ตัดเสียงออกแล้ว)'
+        },
+        'mp.s1.title': { en: 'Project Overview & Motivation', th: 'ภาพรวมและแรงบันดาลใจ' },
+        'mp.s1.lead': {
+            en: 'Most webcam-based fitness demos either require a native mobile app or stream video to a server for pose estimation, adding latency and privacy concerns. <strong>Meme Push-Up</strong> solves this by converting a YOLOv8n model into a TensorFlow.js GraphModel that runs the entire detection pipeline in the browser — rep counting works fully client-side with no video ever leaving the device.',
+            th: 'แอปฟิตเนสที่ใช้กล้องเว็บแคมส่วนใหญ่มักต้องใช้แอปมือถือ หรือส่งวิดีโอไป Server เพื่อประมวลผล Pose Estimation ซึ่งเพิ่ม Latency และความกังวลด้านความเป็นส่วนตัว <strong>Meme Push-Up</strong> แก้ปัญหานี้ด้วยการแปลงโมเดล YOLOv8n เป็น TensorFlow.js GraphModel ที่รัน Pipeline ตรวจจับทั้งหมดในเบราว์เซอร์ นับจำนวนครั้งได้ทั้งหมดฝั่ง Client โดยไม่มีวิดีโอออกจากเครื่องเลย'
+        },
+        'mp.s2.title': { en: 'Gamification & Feedback Layer', th: 'ระบบเกมมิฟิเคชันและ Feedback' },
+        'mp.s3.title': { en: 'System Architecture & Data Flow', th: 'สถาปัตยกรรมระบบและ Data Flow' },
+        'mp.s4.title': { en: 'Technologies & Stack', th: 'เทคโนโลยีที่ใช้' },
+        'mp.footer': {
+            en: '&copy; 2026 Phumrapee Kaewmanee. Meme Push-Up Project. All rights reserved.',
+            th: '&copy; 2026 ภูมิรพี แก้วมณี โปรเจกต์ Meme Push-Up สงวนลิขสิทธิ์ทุกประการ'
+        },
+
+        // ===================== PERSONAL INTERESTS =====================
+        'idx.int.navlabel': { en: 'Personal Interests', th: 'ความชอบส่วนตัว' },
+        'idx.int.title': {
+            en: 'Personal Interests: Quantitative Trading & Chart Analysis',
+            th: 'ความชอบส่วนตัว: การวิเคราะห์กราฟและพัฒนาระบบเทรดอัตโนมัติ'
+        },
+        'idx.int.intro': {
+            en: "Outside of coursework and client projects, I spend my personal time studying technical chart analysis &amp; price action (Smart Money Concepts, liquidity, market structure), writing Pine Script indicators and strategies on TradingView, and building automated trading algorithms in MQL5 — often experimenting with Machine Learning and ONNX Runtime inference. The Expert Advisors below are backtested on MetaTrader 5's Strategy Tester as part of that ongoing practice.",
+            th: 'นอกเวลาเรียนและงานลูกค้า ผมใช้เวลาส่วนตัวศึกษาการวิเคราะห์กราฟเทคนิคอลและ Price Action (Smart Money Concepts, Liquidity, Market Structure), เขียน Indicator/Strategy ด้วย Pine Script บน TradingView และพัฒนาอัลกอริทึมเทรดอัตโนมัติด้วย MQL5 พร้อมทดลองผสาน Machine Learning และ ONNX Runtime เข้ากับระบบเทรด โดย Expert Advisor ด้านล่างคือผลทดสอบ Backtest จริงจาก Strategy Tester ของ MetaTrader 5 ที่เป็นส่วนหนึ่งของการฝึกฝนนี้'
+        },
+        'idx.int.focus1.title': { en: 'Technical & Price Action Analysis', th: 'การวิเคราะห์กราฟเทคนิคอล & Price Action' },
+        'idx.int.focus1.desc': {
+            en: 'Studying Smart Money Concepts (SMC), liquidity sweeps, and market structure shifts (BOS / CHoCH) to read institutional order flow directly on the chart.',
+            th: 'ศึกษา Smart Money Concepts (SMC), Liquidity Sweep และการเปลี่ยนโครงสร้างตลาด (BOS / CHoCH) เพื่ออ่านพฤติกรรมเงินทุนสถาบันบนกราฟโดยตรง'
+        },
+        'idx.int.focus2.title': { en: 'Pine Script Development', th: 'การเขียน Pine Script บน TradingView' },
+        'idx.int.focus2.desc': {
+            en: 'Writing custom indicators and strategy scripts on TradingView to prototype and visually validate trading ideas before automating them.',
+            th: 'พัฒนา Indicator และ Strategy Script บน TradingView เพื่อสร้างต้นแบบและทดสอบไอเดียการเทรดด้วยสายตาก่อนนำไปพัฒนาเป็นระบบอัตโนมัติ'
+        },
+        'idx.int.focus3.title': { en: 'Automated Trading Algorithm Development', th: 'การพัฒนาอัลกอริทึมเทรดอัตโนมัติ' },
+        'idx.int.focus3.desc': {
+            en: 'Turning validated ideas into Expert Advisors with MQL5, and experimenting with Machine Learning models deployed via ONNX Runtime for real-time inference.',
+            th: 'แปลงไอเดียที่ผ่านการทดสอบให้เป็น Expert Advisor ด้วย MQL5 พร้อมทดลองใช้โมเดล Machine Learning ที่ Deploy ผ่าน ONNX Runtime สำหรับการประมวลผลแบบ Real-time'
+        },
+        'idx.int.backtest.title': { en: 'Backtest Performance Showcase', th: 'ผลการทดสอบ Backtest จริง (Performance Showcase)' },
+        'idx.int.backtest.desc': {
+            en: '8 Expert Advisors backtested on XAUUSDm (M5) via the MetaTrader 5 Strategy Tester, Jan–Sep 2026. Metrics pulled directly from the generated HTML reports.',
+            th: 'Expert Advisor ทั้ง 8 ตัว ผ่านการทดสอบ Backtest บนคู่เงิน XAUUSDm (Timeframe M5) ด้วย Strategy Tester ของ MetaTrader 5 ช่วงเดือนมกราคม–กันยายน 2026 โดยดึงค่าสถิติมาจากรายงาน HTML ที่ระบบสร้างขึ้นจริง'
+        },
+        'idx.int.badge.pf': { en: 'Best Profit Factor', th: 'Profit Factor สูงสุด' },
+        'idx.int.badge.sharpe': { en: 'Highest Sharpe Ratio', th: 'Sharpe Ratio สูงสุด' },
+        'idx.int.stat.profit': { en: 'Net Profit', th: 'กำไรสุทธิ' },
+        'idx.int.stat.winrate': { en: 'Win Rate', th: 'อัตราชนะ' },
+        'idx.int.stat.pf': { en: 'Profit Factor', th: 'Profit Factor' },
+        'idx.int.stat.dd': { en: 'Max Drawdown', th: 'Drawdown สูงสุด' },
+        'idx.int.stat.sharpe': { en: 'Sharpe Ratio', th: 'Sharpe Ratio' },
+        'idx.int.disclaimer': {
+            en: 'Disclaimer: Results are historical Strategy Tester simulations on a demo account (Exness-MT5Trial14) using modeled tick data. Past backtest performance does not guarantee future or live trading results.',
+            th: 'ข้อจำกัดความรับผิดชอบ: ผลลัพธ์ทั้งหมดมาจากการจำลองด้วย Strategy Tester บนบัญชีทดลอง (Exness-MT5Trial14) โดยใช้การจำลองข้อมูล Tick ผลการทดสอบย้อนหลังไม่ได้เป็นเครื่องยืนยันผลลัพธ์ในอนาคตหรือการเทรดจริง'
+        },
+        'idx.int.viewreport': { en: 'View Full Backtest Report →', th: 'ดูรายงาน Backtest ฉบับเต็ม →' },
+
+        // ===================== EA BACKTEST DETAIL (shared across all EA report pages) =====================
+        'ea.back': { en: 'Back to Resume', th: 'กลับหน้าหลัก' },
+        'ea.badge.tester': { en: 'MT5 Strategy Tester Backtest', th: 'ผลทดสอบ Strategy Tester ของ MT5' },
+        'ea.btn.portfolio': { en: 'Back to Personal Interests', th: 'กลับหน้าความชอบส่วนตัว' },
+        'ea.meta.l1': { en: 'Symbol', th: 'สินทรัพย์' },
+        'ea.meta.l2': { en: 'Test Period', th: 'ช่วงเวลาทดสอบ' },
+        'ea.meta.l3': { en: 'Initial Deposit', th: 'เงินทุนเริ่มต้น' },
+        'ea.meta.l4': { en: 'Total Deals', th: 'จำนวน Deals ทั้งหมด' },
+        'ea.s1.title': { en: 'Performance Overview', th: 'ภาพรวมผลการทดสอบ' },
+        'ea.s2.title': { en: 'Equity Curve', th: 'กราฟเส้นทุน (Equity Curve)' },
+        'ea.s2.desc': {
+            en: 'Account balance progression across every closed deal recorded in the MetaTrader 5 Strategy Tester report.',
+            th: 'การเปลี่ยนแปลงของยอดเงินในบัญชีตลอดทุก Deal ที่ปิดจริง ตามที่บันทึกไว้ในรายงาน Strategy Tester ของ MetaTrader 5'
+        },
+        'ea.chart.start': { en: 'Start Balance', th: 'ยอดเงินเริ่มต้น' },
+        'ea.chart.peak': { en: 'Peak Balance', th: 'ยอดเงินสูงสุด' },
+        'ea.chart.end': { en: 'Final Balance', th: 'ยอดเงินสุดท้าย' },
+        'ea.s3.title': { en: 'Win / Loss Distribution', th: 'สัดส่วนไม้ที่ได้กำไร / ขาดทุน' },
+        'ea.s3.win': { en: 'Win', th: 'กำไร' },
+        'ea.s3.loss': { en: 'Loss', th: 'ขาดทุน' },
+        'ea.s4.title': { en: 'Full Statistics', th: 'สถิติฉบับเต็ม' },
+        'ea.footer': {
+            en: '&copy; 2026 Phumrapee Kaewmanee. EA Backtest Report — generated from MetaTrader 5 Strategy Tester.',
+            th: '&copy; 2026 ภูมิรพี แก้วมณี รายงาน Backtest EA — สร้างจาก MetaTrader 5 Strategy Tester'
+        },
+        'ea.field.total_trades': { en: 'Total Trades', th: 'จำนวนไม้ทั้งหมด' },
+        'ea.field.total_deals': { en: 'Total Deals', th: 'จำนวน Deals ทั้งหมด' },
+        'ea.field.long_won': { en: 'Long Trades (Won %)', th: 'ไม้ Long (ชนะ %)' },
+        'ea.field.short_won': { en: 'Short Trades (Won %)', th: 'ไม้ Short (ชนะ %)' },
+        'ea.field.largest_profit': { en: 'Largest Profit Trade', th: 'ไม้กำไรสูงสุด' },
+        'ea.field.largest_loss': { en: 'Largest Loss Trade', th: 'ไม้ขาดทุนสูงสุด' },
+        'ea.field.avg_profit': { en: 'Average Profit Trade', th: 'กำไรเฉลี่ยต่อไม้' },
+        'ea.field.avg_loss': { en: 'Average Loss Trade', th: 'ขาดทุนเฉลี่ยต่อไม้' },
+        'ea.field.max_consec_win_usd': { en: 'Max Consecutive Wins ($)', th: 'ชนะติดต่อกันสูงสุด ($)' },
+        'ea.field.max_consec_loss_usd': { en: 'Max Consecutive Losses ($)', th: 'แพ้ติดต่อกันสูงสุด ($)' },
+        'ea.field.max_consec_profit_count': { en: 'Max Consecutive Profit (Count)', th: 'จำนวนไม้กำไรติดต่อกันสูงสุด' },
+        'ea.field.max_consec_loss_count': { en: 'Max Consecutive Loss (Count)', th: 'จำนวนไม้ขาดทุนติดต่อกันสูงสุด' },
+        'ea.field.avg_consec_wins': { en: 'Average Consecutive Wins', th: 'ชนะติดต่อกันเฉลี่ย' },
+        'ea.field.avg_consec_losses': { en: 'Average Consecutive Losses', th: 'แพ้ติดต่อกันเฉลี่ย' },
+        'ea.field.min_holding': { en: 'Minimal Holding Time', th: 'ระยะเวลาถือครองต่ำสุด' },
+        'ea.field.max_holding': { en: 'Maximal Holding Time', th: 'ระยะเวลาถือครองสูงสุด' },
+        'ea.field.avg_holding': { en: 'Average Holding Time', th: 'ระยะเวลาถือครองเฉลี่ย' },
+        'ea.field.recovery_factor': { en: 'Recovery Factor', th: 'Recovery Factor' },
+        'ea.field.expected_payoff': { en: 'Expected Payoff', th: 'Expected Payoff' },
+        'ea.field.ahpr': { en: 'AHPR', th: 'AHPR' },
+        'ea.field.ghpr': { en: 'GHPR', th: 'GHPR' },
+        'ea.field.lr_correlation': { en: 'LR Correlation', th: 'LR Correlation' },
+        'ea.field.zscore': { en: 'Z-Score', th: 'Z-Score' },
+        'ea.field.margin_level': { en: 'Margin Level', th: 'Margin Level' },
+        'ea.field.history_quality': { en: 'History Quality', th: 'คุณภาพข้อมูลย้อนหลัง' },
+        'ea.field.balance_dd_abs': { en: 'Balance Drawdown (Absolute)', th: 'Drawdown เงินทุน (Absolute)' },
+        'ea.field.equity_dd_abs': { en: 'Equity Drawdown (Absolute)', th: 'Drawdown มูลค่าพอร์ต (Absolute)' },
+        'ea.field.equity_dd_max': { en: 'Equity Drawdown (Maximal)', th: 'Drawdown มูลค่าพอร์ต (สูงสุด)' },
+
+        // Per-EA hero subtitles
+        'ea.bb_rsi_vol_ea.sub': {
+            en: 'A mean-reversion strategy combining Bollinger Bands, RSI, and volume confirmation to time entries on XAUUSD.',
+            th: 'กลยุทธ์แบบ Mean-Reversion ผสาน Bollinger Bands, RSI และการยืนยันด้วย Volume เพื่อจับจังหวะเข้าเทรดบน XAUUSD'
+        },
+        'ea.ema_cross_bias.sub': {
+            en: 'An EMA crossover strategy that filters entries with a directional bias to follow the prevailing trend.',
+            th: 'กลยุทธ์ EMA Crossover ที่กรองจังหวะเข้าเทรดด้วยอคติทิศทาง (Directional Bias) เพื่อไล่ตามเทรนด์หลัก'
+        },
+        'ea.goldsniper_ai_backtest.sub': {
+            en: 'Backtest of the multi-scale AI regime engine (Trend HFT Scalper + Sideway Martingale Grid) from the GoldSniper AI project.',
+            th: 'ผลทดสอบของ Multi-Scale AI Regime Engine (Trend HFT Scalper + Sideway Martingale Grid) จากโปรเจกต์ GoldSniper AI'
+        },
+        'ea.ict_market_structure_ea.sub': {
+            en: 'An ICT-style market structure strategy trading Break of Structure (BOS) and Change of Character (CHoCH) shifts.',
+            th: 'กลยุทธ์แนว ICT ที่เทรดตามการเปลี่ยนโครงสร้างตลาด Break of Structure (BOS) และ Change of Character (CHoCH)'
+        },
+        'ea.ml_godmode_supersniper.sub': {
+            en: 'A Machine Learning-driven sniper-entry model experiment for high-precision XAUUSD trade timing.',
+            th: 'โมเดลทดลองที่ใช้ Machine Learning หาจังหวะเข้าเทรดแบบ Sniper Entry บน XAUUSD ด้วยความแม่นยำสูง'
+        },
+        'ea.rsi_swing_choch_fibo_ea.sub': {
+            en: 'A swing strategy combining RSI momentum, CHoCH structure shifts, and Fibonacci retracement zones.',
+            th: 'กลยุทธ์ Swing ที่ผสาน RSI Momentum, การเปลี่ยนโครงสร้าง CHoCH และโซน Fibonacci Retracement'
+        },
+        'ea.smartgrid_onnx.sub': {
+            en: 'A grid trading system enhanced with an ONNX-deployed Machine Learning filter for entry/exit decisions.',
+            th: 'ระบบเทรดแบบ Grid ที่เสริมด้วยตัวกรอง Machine Learning ที่ Deploy ผ่าน ONNX สำหรับตัดสินใจเข้า/ออกออเดอร์'
+        },
+        'ea.sniper_ml_ea.sub': {
+            en: 'A Machine Learning sniper-entry model paired with trailing-stop trade management.',
+            th: 'โมเดล Machine Learning สำหรับหาจังหวะเข้าเทรดแบบ Sniper ร่วมกับการบริหารออเดอร์ด้วย Trailing Stop'
         },
     };
 

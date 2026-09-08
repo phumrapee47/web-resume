@@ -668,7 +668,9 @@ a:focus-visible, button:focus-visible {
     background-color: var(--color-paper-2);
 }
 
-.img-container img { width: 100%; height: auto; display: block; }
+.img-container img,
+.img-container video,
+.img-container svg { width: 100%; height: auto; display: block; }
 
 .img-caption {
     padding: 10px 16px;
@@ -678,6 +680,63 @@ a:focus-visible, button:focus-visible {
     text-align: center;
     background-color: var(--color-paper-2);
     border-top: 1px solid var(--color-rule);
+}
+
+/* Equity Curve Chart (inline SVG) */
+.equity-chart { padding: 18px 18px 8px; background-color: var(--color-paper); }
+.equity-chart .chart-area { fill: var(--color-accent-soft); opacity: 0.55; }
+.equity-chart .chart-line { fill: none; stroke: var(--color-accent-strong); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+.equity-chart .chart-baseline { stroke: var(--color-ink-3); stroke-width: 1; stroke-dasharray: 4 4; }
+
+.chart-stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 14px 18px 18px;
+    border-top: 1px dashed var(--color-rule);
+    background-color: var(--color-paper-2);
+}
+
+.chart-stat { display: flex; flex-direction: column; gap: 2px; }
+.chart-stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-ink-3);
+}
+.chart-stat-value { font-family: var(--font-mono); font-weight: 700; font-size: 1rem; color: var(--color-ink); }
+.chart-stat-value.is-peak { color: var(--color-success); }
+
+/* Win / Loss Distribution Bar */
+.winloss-bar {
+    display: flex;
+    width: 100%;
+    height: 14px;
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+    background-color: var(--color-paper-3);
+    margin-bottom: 14px;
+}
+.winloss-seg { height: 100%; }
+.winloss-seg.is-win { background-color: var(--color-success); }
+.winloss-seg.is-loss { background-color: var(--color-ink-3); }
+
+.winloss-legend { display: flex; flex-wrap: wrap; gap: 24px; }
+.winloss-legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--color-ink-2); }
+.winloss-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.winloss-dot.is-win { background-color: var(--color-success); }
+.winloss-dot.is-loss { background-color: var(--color-ink-3); }
+.winloss-legend-item strong { color: var(--color-ink); font-family: var(--font-mono); }
+
+.disclaimer-note {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--color-rule);
+    font-size: 0.8125rem;
+    font-style: italic;
+    color: var(--color-ink-3);
+    max-width: 80ch;
 }
 
 /* Tabs for Multi-Component Projects */
