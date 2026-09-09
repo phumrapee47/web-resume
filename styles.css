@@ -415,6 +415,12 @@ button:focus-visible {
 }
 .btn-secondary:active { transform: translateY(0) scale(0.98); }
 
+.btn-icon {
+    padding: var(--space-xs);
+    aspect-ratio: 1;
+    flex: 0 0 auto !important;
+}
+
 .social-links {
     display: flex;
     gap: var(--space-xs);

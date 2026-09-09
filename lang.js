@@ -24,6 +24,7 @@
             th: 'นักพัฒนา Full-Stack และนักวิเคราะห์ข้อมูล AI'
         },
         'hero.cta.projects': { en: 'View Projects', th: 'ดูผลงาน' },
+        'hero.cta.cv': { en: 'View CV', th: 'ดูเรซูเม่' },
         'hero.cta.contact': { en: 'Get in Touch', th: 'ติดต่อ' },
         'hero.meta.location': { en: 'Location', th: 'ที่อยู่' },
         'hero.meta.status': { en: 'Status', th: 'สถานะ' },
