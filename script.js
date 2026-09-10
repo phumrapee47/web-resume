@@ -54,7 +54,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Add animation on scroll
 const observerOptions = {
-    threshold: 0.1,
+    threshold: 0,
     rootMargin: '0px 0px -100px 0px'
 };
 
